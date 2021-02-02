@@ -1,4 +1,19 @@
 :: roids
 <span id="money">Money: $money</span>
 
-As expected, your physical gains have been through the roof. Your rapid rise has grabbed the attention of everyone throughout the league. Although most are impressed by your improvement, it has made many people suspicious.
+<<timed 1s t8n>>As expected, your physical gains have been through the roof. Your rapid rise has grabbed the attention of everyone throughout the league.
+
+<<next 2s>>Although most are impressed by your improvement, it has made many people suspicious, particularly your rival on the team.
+
+<<next 3s>><<type 40ms>>Rival: "Wow, $name, you've certainly been growing. Find a new training regiment or something?<</type>>
+<<next 4s>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Yeah, this new trainer is really helping me">><br>
+    <<type 40ms>>"So you're telling me this is all natural?"<</type>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Of course it is, why do you ask?">><br><br><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><br>
+    <<timed 7s t8n>>[[Give Rival Steroids|give]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Keep Denying|deny]]<</timed>><</linkappend>><</timed>>
+<</linkappend>>
+<</timed>>
+
+:: deny
+You keep denying
+
+:: give
+You give the roids

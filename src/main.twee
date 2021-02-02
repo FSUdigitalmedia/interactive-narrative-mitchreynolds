@@ -12,13 +12,14 @@ NBA Dreams
 <<set $money to 0>>
 
 :: Start
-You have just finished a great year of college basketball and now it is time to enter the NBA draft.
-Some teams question your work ethic after appearing to coast through college.
+After lighting up the nation in a great year of college basketball, you find yourself prepared to enter the NBA Draft.
+
+Your natural talent is obvious, but some scouts question your work ethic having coasted through college.
 
 [[Continue|next1]]
 
 :: next1
-Pick a team which you would like to get drafted by
+Choose a team which you would like to be drafted by.
 <<listbox "$teamchoice">>
     <<option "None">>
 	<<option "Atlanta Hawks">>
@@ -55,7 +56,7 @@ Pick a team which you would like to get drafted by
 [[Continue|next2]]
 
 :: next2
-You have chosen the $teamchoice
+You have chosen to meet with the $teamchoice
 
 Your agent has set up a pre-draft interview for them to judge you as a prospect.
 

@@ -1,64 +1,64 @@
 :: Interview
 You sit across from 3 $teamchoice executives, their scrutinizing eyes dissecting everything you do.
 
-"First of all, what is your name?"
-<<textbox "$name" "" "question1" autofocus>>
+<<type 40ms>>"First of all, what is your name?"<</type>>
+<<timed 2s t8n>><<textbox "$name" "" "question1" autofocus>><</timed>>
 
 :: question1
-"Glad to have you here, $name, what would you say your playstyle is like?"
-<<listbox "$playstyle">>
+<<type 40ms>>"Glad to have you here, $name, what would you say your playstyle is like?"<</type>>
+<<timed 3s t8n>><<listbox "$playstyle">>
     <<option "None" 1>>
 	<<option "Aggressive, always looking to score at the rim" 2>>
 	<<option "I value passing and always try to involve my teammates before myself" 3>>
 	<<option "Great outside scorer, able to shoot from anywhere" 4>>
 <</listbox>>
 
-[[Continue|question2]]
+[[Continue|question2]]<</timed>>
 
 :: question2
 <<nobr>>
-    <<if $playstyle is 1>>"You don't have a playstyle? I think we're done here."<br><br>[[Leave Room|lose]]<</if>>
-    <<if $playstyle is 2>>"A great finisher is key to a professional offense."<</if>>
-    <<if $playstyle is 3>>"No such thing as having too many playmakers."<</if>>
-    <<if $playstyle is 4>>"Great shooters are always valuable in the modern game."<</if>>
+    <<if $playstyle is 1>><<type 40ms>>"You don't have a playstyle? I think we're done here."<br><br>[[Leave Room|lose]]<</type>><</if>>
+    <<if $playstyle is 2>><<type 40ms>>"A great finisher is key to a professional offense."<</type>><</if>>
+    <<if $playstyle is 3>><<type 40ms>>"No such thing as having too many playmakers."<</type>><</if>>
+    <<if $playstyle is 4>><<type 40ms>>"Great shooters are always valuable in the modern game."<</type>><</if>>
 <</nobr>>
 
-<<if $playstyle gt "1">>"What would you say is most important to you in basketball?"
-<<listbox "$mostimportant">>
+<<if $playstyle gt "1">><<type 40ms>>"What would you say is most important to you in basketball?"<</type>>
+<<timed 4s t8n>><<listbox "$mostimportant">>
     <<option "None" 1>>
 	<<option "Winning is all that matters, I will do whatever is needed to help the team win" 2>>
 	<<option "Individual stats. As long as my numbers are up, I'm not concerned" 3>>
 	<<option "The money. I'm excited to live life to the fullest." 4>>
 <</listbox>>
 
-[[Continue|question3]]<</if>>
+[[Continue|question3]]<</timed>><</if>>
 
 :: question3
 <<nobr>>
-    <<if $mostimportant is 1>>"Nothing's important to you? I think we're done here."<br><br>[[Leave Room|lose]]<</if>>
-    <<if $mostimportant is 2>>"We are here to win championships, glad you're on the same page."<</if>>
-    <<if $mostimportant is 3>>"Noted."<</if>>
-    <<if $mostimportant is 4>>"Well we certainly hope you don't just care about the paychecks."<</if>>
+    <<if $mostimportant is 1>><<type 40ms>>"Nothing's important to you? I think we're done here."<br><br>[[Leave Room|lose]]<</type>><</if>>
+    <<if $mostimportant is 2>><<type 40ms>>"We are here to win championships, glad you're on the same page."<</type>><</if>>
+    <<if $mostimportant is 3>><<type 40ms>>"Noted."<</type>><</if>>
+    <<if $mostimportant is 4>><<type 40ms>>"Well we certainly hope you don't just care about the paychecks."<</type>><</if>>
 <</nobr>>
 
-<<if $playstyle gt "1">>"Last question, $name. Do you think you're prepared to put in the necessary time and work to succeed in this league?"
-<<listbox "$prepared">>
+<<if $playstyle gt "1">><<type 35ms>>"Last question, $name. Do you think you're prepared to put in the necessary time and work to succeed in this league?"<</type>>
+<<timed 4s t8n>><<listbox "$prepared">>
     <<option "None" 1>>
 	<<option "Without a doubt, I'm ready to do whatever it takes." 2>>
 	<<option "Well yeah, but with how good I am, I don't think I'll need much work." 3>>
 	<<option "You mean I'm not allowed to just go party every night?" 4>>
 <</listbox>>
 
-[[Continue|question4]]<</if>>
+[[Continue|question4]]<</timed>><</if>>
 
 :: question4
 <<nobr>>
-    <<if $prepared is 1>>"You've got nothing? I think that'll do it for us."<br><br>[[Leave Room|lose]]<</if>>
-    <<if $prepared is 2>>"That's what we like to hear."<</if>>
-    <<if $prepared is 3>>"We believe that you can always improve, no matter how good you think you are."<</if>>
-    <<if $prepared is 4>>"No you cannot. You realize this is a job interview, right?"<</if>>
+    <<if $prepared is 1>><<type 40ms>>"You've got nothing? I think that'll do it for us."<br><br>[[Leave Room|lose]]<</type>><</if>>
+    <<if $prepared is 2>><<type 40ms>>"That's what we like to hear."<</type>><</if>>
+    <<if $prepared is 3>><<type 40ms>>"We believe that you can always improve, no matter how good you think you are."<</type>><</if>>
+    <<if $prepared is 4>><<type 40ms>>"No you cannot. You realize this is a job interview, right?"<</type>><</if>>
 <</nobr>>
 
-<<if $prepared gt "1">>"Anyways, that's all the time we have for you today. The $teamchoice hope to be in contact with you soon"
+<<if $prepared gt "1">><<type 40ms>>"Anyways, that's all the time we have for you today. The $teamchoice hope to be in contact with you soon"<</type>>
 
-[[Proceed to Draft|draftroom]]<</if>>
+<<timed 6s t8n>>[[Proceed to Draft|draftroom]]<</timed>><</if>>

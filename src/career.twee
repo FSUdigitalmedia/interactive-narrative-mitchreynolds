@@ -1,30 +1,29 @@
 :: begin
-It is now time for contract negotiations to begin.
+You've been drafted, and now it's time to negotiate your contract.
 
-$teamchoice: "Great to see you again, $name! Let's get this started, here's what we have in mind."
-<<nobr>>
-    <<linkreplace "View Offer">>
+<<nobr>><<timed 1s t8n>>$teamchoice: <<next 1s>><<type 40ms>>"Great to see you again, $name! Let's get this started, here's what we have in mind."<</type>><br>
+    <<next 4s>><<linkreplace "View Offer">>
         3 years<br>$500 per year<br>15 minutes per game<br><br>
         [[Accept Offer|accept][$money to 500]]&nbsp; &nbsp; &nbsp;[[Negotiate Higher|negotiate]]
-    <</linkreplace>>
+    <</linkreplace>><</timed>>
 <</nobr>>
 
 :: negotiate
-$teamchoice: "We can come up a little bit, but not by much. How about this?"
+$teamchoice: <<type 40ms>>"We can come up a little bit, but not by much. How about this?"<</type>>
 <<nobr>>
-    <<linkreplace "View Offer">>
+    <<timed 3s t8n>><<linkreplace "View Offer">>
         3 years<br>$550 per year<br>15 minutes per game<br><br>
         [[Accept Offer|accept][$money to 550]]&nbsp; &nbsp; &nbsp;[[Negotiate Higher|negotiate2]]
-    <</linkreplace>>
+    <</linkreplace>><</timed>>
 <</nobr>>
 
 :: negotiate2
-$teamchoice: "Our hands are tied, $name. This is our final offer, take it or leave it."
+$teamchoice: <<type 40ms>>"Our hands are tied, $name. This is our final offer, take it or leave it."<</type>>
 <<nobr>>
-    <<linkreplace "View Offer">>
+    <<timed 4s t8n>><<linkreplace "View Offer">>
         2 years<br>$625 per year<br>15 minutes per game<br><br>
         [[Accept Offer|accept][$money to 625]]&nbsp; &nbsp; &nbsp;[[Decline Offer|decline]]
-    <</linkreplace>>
+    <</linkreplace>><</timed>>
 <</nobr>>
 
 :: decline
@@ -33,9 +32,9 @@ You have lost.
 :: accept
 <span id="money">Money: $money</span>
 
-$teamchoice: "Excellent! Happy to have you on the $teamchoice!"
+$teamchoice: <<type 40ms>>"Excellent! Happy to have you on the $teamchoice!"<</type>>
 
-[[Continue|next3]]
+<<timed 3s t8n>>[[Continue|next3]]<</timed>>
 
 :: next3
 <span id="money">Money: $money</span>
@@ -43,17 +42,17 @@ $teamchoice: "Excellent! Happy to have you on the $teamchoice!"
 You get a call from your agent
 
 <<nobr>>
-    <<linkreplace "Answer Phone">>Agent: "What's up, $name? I got some bad news."<br><br>
-        <<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What is it?">><br><br>Agent: "The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<br><br>
-            <<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What should I do?">><br><br>Agent: I have some options lined up for you.
-            <br><br>First, I can get you the best NBA trainer on the market. It's expensive but they're the best for a reason.
+    <<linkreplace "Answer Phone">><<type 40ms>>"What's up, $name? I got some bad news."<</type>><br>
+        <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What is it?">><br><br><<type 40ms>>"The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><br>
+            <<timed 7.5s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What should I do?">><br><br><<type 40ms>>"I have some options lined up for you."<</type>>
+            <br><<type 30ms>>"First, I can get you the best NBA trainer on the market. It's expensive but they're the best for a reason.
             <br>Or, it'd be a good idea to get more work in with your coach. Earning your coach's trust will get you playing in no time.
-            <br>Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest.<br><br>
-                <<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Why can't I just vibe and let it take care of itself?">><br><br>Agent: "I mean if you really want to, but I don't think you'll get very far like that. Let me know what you want to do."<br><br>
-                [[Hire Trainer (costs $300)|trainer][$money -= 300]]&nbsp;&nbsp;&nbsp;&nbsp;[[Work with Coach (free)|coach]]&nbsp;&nbsp;&nbsp;&nbsp;
-                [[Buy Steroids (costs $200)|roids][$money -= 200]]&nbsp;&nbsp;&nbsp;&nbsp;[[Go with the Flow (free)|flow]]
-                <</linkappend>>
-            <</linkappend>>
-        <</linkappend>>
+            <br>Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest."<</type>><br>
+                <<timed 15s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Why can't I just vibe and let it take care of itself?">><br><br><<type 40ms>>"I mean if you really want to, but I don't think you'll get very far like that. Let me know what you want to do."<</type>><br>
+                <<timed 5s t8n>>[[Hire Trainer (costs $300)|trainer][$money -= 300]]&nbsp;&nbsp;&nbsp;&nbsp;[[Work with Coach (free)|coach]]&nbsp;&nbsp;&nbsp;&nbsp;
+                [[Buy Steroids (costs $200)|roids][$money -= 200]]&nbsp;&nbsp;&nbsp;&nbsp;[[Go with the Flow (free)|flow]]<</timed>>
+                <</linkappend>><</timed>>
+            <</linkappend>><</timed>>
+        <</linkappend>><</timed>>
     <</linkreplace>>
 <</nobr>>
