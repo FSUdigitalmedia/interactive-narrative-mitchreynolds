@@ -8,6 +8,9 @@
 :: StoryTitle
 NBA Dreams
 
+:: StoryAuthor
+Mitch Reynolds
+
 :: StoryInit
 <<set $money to 0>>
 

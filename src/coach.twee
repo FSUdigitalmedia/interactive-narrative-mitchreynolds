@@ -1,4 +1,18 @@
 :: coach
 <span id="money">Money: $money</span>
 
-Coach: Hey, $name. Lets get to work.
+Coach: Hey, $name. Glad to see you want some more practice, lets get to work.
+
+Day after day for months, you spend time after practice doing individual drills with your coach.
+
+Coach: I gotta say, $name, I'm very impressed with the dedication you've shown me. I'm fully confident in your ability to run our offense and win us games. We're still a few weeks out from the season opener, but for now you're the favorite to be a starter.
+
+[[Continue|next6]]
+
+:: next6
+
+The regular season arrives, and you have retained your spot on the starting lineup. Your coach and teammates expect you to be the leader on the court, as you know the offense better than any of your teammates.
+
+Behind your leadership and stellar performances, the $teamchoice have a strong start to the season and emerge a a true playoff contender.
+
+[[Continue|next5]]

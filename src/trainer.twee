@@ -11,3 +11,21 @@ Trainer: "Nice to meet you, $name. Let's go through some drills first."
 <span id="money">Money: $money</span>
 
 After an exausting and productive workout, you head home to get some rest in preparation for the upcoming season.
+
+You get another call from your agent
+
+Agent: "I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated to start on opening night! Rest up, you have quite the season ahead of you!
+
+[[Continue|next5]]
+
+:: next5
+
+6 months later
+
+With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
+
+In just the last week of the season, you land wrong and injure your knee. Luckily it is minor, but the team doctors say you will probably have to miss the first round, warning you of the risk for much worse reinjury.
+
+However, as the best player on the team, you feel pressured to not let down your coaches and teammates. It seems your coach wants you to play, but he's leaving the final decision up to you.
+
+[[Take the Risk and Play|play]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Sit Out and Fully Heal|sit]]

@@ -13,7 +13,24 @@
 <</timed>>
 
 :: deny
-You keep denying
+
+<<type 40ms>>Rival: "Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>>
+
+<!-- insert linkappend conversation --><<timed 4s t8n>>You get another call from your agent
+
+<<type 40ms>>"Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you've been kicked out of the NBA."<</type>>
+
+<<next 8s>>You Lose<</timed>>
 
 :: give
-You give the roids
+
+<<type 40ms>>Rival: I knew you'd crack. This was the best decision for the both of us.<</type>>
+
+<<timed 4s t8n>>4 months later<br>
+<!-- insert linkappend conversation --><<next 2s>>You get another call from your agent
+
+<<next 1s>><<type 40ms>>"Bad news, $name. Your rival has exploded this year and its not looking good for your playing time. If you don't show major improvements soon, I'm afraid you'll never see the starting lineup"<</type>><br>
+<<next 5s>>So what should I do?<br>
+<<next 3s>><<type 40ms>>"I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know what I need to set up."<</type>><br>
+<<next 9s>>[[Work with Coach|coach2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Hire Trainer|trainer2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Take More Steroids|roids2]]
+<</timed>>
