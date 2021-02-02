@@ -1,0 +1,13 @@
+:: trainer
+<span id="money">Money: $money</span>
+
+You have hired a professional trainer to help you work on your game.
+
+Trainer: "Nice to meet you, $name. Let's go through some drills first."
+
+[[Continue|next4]]
+
+:: next4
+<span id="money">Money: $money</span>
+
+After an exausting and productive workout, you head home to get some rest in preparation for the upcoming season.

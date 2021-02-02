@@ -1,0 +1,62 @@
+:: StoryData
+{
+    "ifid": "72AF93C7-7124-47C0-82B1-6601396EFAAA",
+    "format": "SugarCube",
+    "format-version": "2.34.1"
+}
+
+:: StoryTitle
+NBA Dreams
+
+:: StoryInit
+<<set $money to 0>>
+
+:: Start
+You have just finished a great year of college basketball and now it is time to enter the NBA draft.
+Some teams question your work ethic after appearing to coast through college.
+
+[[Continue|next1]]
+
+:: next1
+Pick a team which you would like to get drafted by
+<<listbox "$teamchoice">>
+    <<option "None">>
+	<<option "Atlanta Hawks">>
+	<<option "Boston Celtics">>
+	<<option "Brookyln Nets">>
+	<<option "Charlotte Hornets">>
+	<<option "Cleveland Cavaliers">>
+    <<option "Dallas Mavericks">>
+    <<option "Denver Nuggets">>
+    <<option "Detroit Pistons">>
+    <<option "Golden State Warriors">>
+    <<option "Houston Rockets">>
+    <<option "Indiana Pacers">>
+    <<option "Los Angeles Clippers">>
+    <<option "Los Angeles Lakers">>
+    <<option "Memphis Grizzlies">>
+    <<option "Miami Heat">>
+    <<option "Milwaukee Bucks">>
+    <<option "Minnesota Timberwolves">>
+    <<option "New Orleans Pelicans">>
+    <<option "New York Knicks">>
+    <<option "Oklahoma City Thunder">>
+    <<option "Orlando Magic">>
+    <<option "Philadelphia 76ers">>
+    <<option "Phoenix Suns">>
+    <<option "Portland Trail Blazers">>
+    <<option "Sacramento Kings">>
+    <<option "San Antonio Spurs">>
+    <<option "Toronto Raptors">>
+    <<option "Utah Jazz">>
+    <<option "Washington Wizards">>
+<</listbox>>
+
+[[Continue|next2]]
+
+:: next2
+You have chosen the $teamchoice
+
+Your agent has set up a pre-draft interview for them to judge you as a prospect.
+
+[[Interview]]

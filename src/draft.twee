@@ -1,0 +1,10 @@
+:: draftroom
+You sit anxiously among the room of equally nervous prospects.
+
+<<timed 3s t8n>>
+The commissioner comes to the stage: "With pick number <<print random(1,30)>> in the NBA Draft, the $teamchoice select.."
+
+<<next 3s>>$name!
+
+<<next 1s>>[[Start Your Career|begin]]
+<</timed>>
