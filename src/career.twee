@@ -27,7 +27,7 @@ $teamchoice: <<type 40ms>>"Our hands are tied, $name. This is our final offer, t
 <</nobr>>
 
 :: decline
-You have lost.
+Sorry it couldn't work out, $name.
 
 :: accept
 <span id="money">Money: $money</span>

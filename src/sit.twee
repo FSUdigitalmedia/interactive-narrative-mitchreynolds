@@ -12,3 +12,83 @@ Your teammates rallied behind your absence and made it to the second round, wher
 :: round2
 
 It is the 2nd round of the playoffs.
+
+Your knee has almost fully healed, but some doctors suggest you play less minutes to avoid any minor risk remaining.
+
+This time, your coaches and teammates are less subtle with their desire for you to play, as they know you give them the best chance to win.
+
+Once again, your coach leaves the decision up to you.
+
+[[Play Full Minutes|play2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Play Half Minutes|half]]
+
+:: play2
+
+As expected, you decide to suit up for the full game.
+
+This proves to be a good decision as you proceed to score 35 points in your playoff debut, leading the $teamchoice to a round 2 victory.
+
+Your team wins the second round 4 games to 1, setting up a matchup against the best player in the league in the semifinals.
+
+[[Continue|next7]]
+
+:: half
+
+You have chosen to play on a minutes restriction.
+
+Your teammates and coaches are not very happy, but you want to do everything you can to avoid serious injury.
+
+Unlike the first round, your teammates are not rallied togther by your absense, and they get outperformed.
+
+You get your shot down 15 in the 4th quarter. Despite your best efforts, the $teamchoice still lose the game.
+
+The momentum your team lost in the first game ended up being the difference maker in the series, as you fall 4 games to 2 in the quarterfinals.
+
+[[Continue|lose2]]
+
+:: lose2
+
+You have been eliminated in the 2nd round of the playoffs.
+
+Not a complete loss, but certainly not a championship.
+
+:: next7
+
+Your coach meets with you ahead of the conference finals.
+
+Coach: We're about to face the best player in the league and he's been torching any defense he faces. I think we should have you matched up against him the whole game.
+
+You give us the best chance to stop them, but your reputation may take a serious blow if you get cooked.
+
+[[Guard Best Player|guard]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Let Others Guard Them|others]]
+
+:: guard
+
+You step up to the challenge and decide to guard the best player the whole game.
+
+As gametime rolls around, you can see why defenders fear thi s player and this team.
+
+Your effort on defense pays off as you do a good job slowing them down, enough for your team to take advantage and win.
+
+The next 2 games are not as easy, with their best player giving you fits trying to guard them.
+
+Eventually, the series comes down to a final game 7. You drop 40 points and run away with the victory.
+
+[[Proceed to the Finals|finals]]
+
+:: others
+
+You decide to let the defense play like normal.
+
+Your passiveness proves to be detrimental to your team's success, and their best player runs around the defense every play, scoring when and where they want.
+
+Nothing that your team throws at them seems to help at all.
+
+Unsurprisingly, the $teamchoice lose this round 4-2
+
+[[Continue|lose3]]
+
+:: lose3
+
+You have been elimated in the semifinals of the playoffs.
+
+So close, yet so far.

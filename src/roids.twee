@@ -34,3 +34,4 @@
 <<next 3s>><<type 40ms>>"I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know what I need to set up."<</type>><br>
 <<next 9s>>[[Work with Coach|coach2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Hire Trainer|trainer2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Take More Steroids|roids2]]
 <</timed>>
+<!-- expand these 3 paths -->

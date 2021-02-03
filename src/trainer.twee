@@ -10,11 +10,11 @@ Trainer: "Nice to meet you, $name. Let's go through some drills first."
 :: next4
 <span id="money">Money: $money</span>
 
-After an exausting and productive workout, you head home to get some rest in preparation for the upcoming season.
+After months of exhausting workouts, you take it easy and get some rest in preparation for the season.
 
 You get another call from your agent
 
-Agent: "I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated to start on opening night! Rest up, you have quite the season ahead of you!
+Agent: "I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated to start on opening night next week! Rest up, you have quite the season ahead of you!
 
 [[Continue|next5]]
 

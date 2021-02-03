@@ -1,0 +1,71 @@
+:: finals
+
+This is the moment you've been waiting for, the finals. You want to celebrate, but the job isn't over just yet.
+
+You and your teammates are locked in for the whole week of practice, exhausting yourselves in preparation.
+
+Coach calls a meeting after practice
+
+"I've been extremely pleased with the work ethic shown this week, you guys are ready for this team"
+
+"With that said, I think you guys deserve a night off. Go out, enjoy the city, and be ready tomorrow for the biggest game of your lives."
+
+Most of the team seems very excited at this offer, but you feel uneasy as the finals begin tomorrow.
+
+You think over your options to yourself. Do you go out with them? Convince them to stay in? Just stay home and let them go?
+
+[[Go Out With Your Team|out]]&nbsp;&nbsp;&nbsp;&nbsp;[[Convince Them to Stay In|convince]]&nbsp;&nbsp;&nbsp;&nbsp;[[Stay Home and Mind Your Business|stayhome]]
+
+:: out
+
+You decide to take your coach's advice and have some fun with your team tonight.
+
+You have some much needed fun, and the team returns to their homes.
+
+The next morning, everyone is lethargic and not ready for a game of basketball.
+
+Your coach is very angry at practice, but has no choice other than to proceed as normal.
+
+[[Continue|next8]]
+
+:: next8
+
+Your team's low energy carries over to the game.
+
+The other team looks better than you in every aspect of the game, leading to a blowout loss.
+
+Your team never recovers from this blow, and easily lose the series 4 games to 0.
+
+[[Continue|lose4]]
+
+:: stayhome
+
+Not wanting to ruin your friends' fun, you say nothing and decide to stay home.
+
+The next morning, you see just how much fun you missed out on as your teammates walk around like zombies.
+
+You regret not convincing them to stay in, but at least you're at 100% if no one else.
+
+You proceed to have one of the best finals series of all time, averaging 35 points while trying as hard as you can to carry your teammates to a win.
+
+You do enough to force a game 7, the last game of the season no matter what.
+
+You break the record for individual scoring in a finals game, but your teammates don't give you much help.
+
+Unable to do everything yourself, the $teamchoice fall in game 7 and are named runner-up.
+
+[[Continue|lose5]]
+
+:: convince
+
+You jump in and yell at everyone that they can't go out the night before the finals.
+
+Many give you judging looks, but as the team's leader, they all agree to listen to you and rest up.
+
+The next morning, everyone is locked in and ready to go.
+
+Your team takes the finals by storm, blowing out the other team in each of the first 2 games.
+
+After taking losses in game 3 and 4, your team bounces back to win the next 2 games, making you champions.
+
+You have won the NBA Finals!
