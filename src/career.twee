@@ -40,7 +40,7 @@ $teamchoice: <<type 40ms>>"Excellent! Happy to have you on the $teamchoice!"<</t
 <span id="money">Money: $money</span>
 
 You get a call from your agent
-
+[img[../assets/agent.png]]
 <<nobr>>
     <<linkreplace "Answer Phone">><<type 40ms>>"What's up, $name? I got some bad news."<</type>><br>
         <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What is it?">><br><br><<type 40ms>>"The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><br>

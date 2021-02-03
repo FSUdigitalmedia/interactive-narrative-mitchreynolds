@@ -1,6 +1,7 @@
 :: coach
 <span id="money">Money: $money</span>
 
+[img[../assets/coach.png]]
 Coach: Hey, $name. Glad to see you want some more practice, lets get to work.
 
 Day after day for months, you spend time after practice doing individual drills with your coach.
