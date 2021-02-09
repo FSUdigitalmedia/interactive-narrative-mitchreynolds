@@ -38,17 +38,15 @@ $teamchoice: <<type 40ms>>"Excellent! Happy to have you on the $teamchoice!"<</t
 
 :: next3
 <span id="money">Money: $money</span>
-
-You get a call from your agent
-[img[../assets/agent.png]]
+You get a call from your agent<br>
 <<nobr>>
-    <<linkreplace "Answer Phone">><<type 40ms>>"What's up, $name? I got some bad news."<</type>><br>
-        <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What is it?">><br><br><<type 40ms>>"The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><br>
-            <<timed 7.5s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;What should I do?">><br><br><<type 40ms>>"I have some options lined up for you."<</type>>
+    <<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"What's up, $name? I got some bad news."<</type>><</say>><br>
+        <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//What is it?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><</say>><br>
+            <<timed 7.5s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//What should I do?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I have some options lined up for you."<</type>>
             <br><<type 30ms>>"First, I can get you the best NBA trainer on the market. It's expensive but they're the best for a reason.
             <br>Or, it'd be a good idea to get more work in with your coach. Earning your coach's trust will get you playing in no time.
-            <br>Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest."<</type>><br>
-                <<timed 15s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Why can't I just vibe and let it take care of itself?">><br><br><<type 40ms>>"I mean if you really want to, but I don't think you'll get very far like that. Let me know what you want to do."<</type>><br>
+            <br>Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest."<</type>><</say>><br>
+                <<timed 15s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//Why can't I just vibe and let it take care of itself?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I mean if you really want to, but I don't think you'll get very far like that. Let me know what you want to do."<</type>><</say>><br>
                 <<timed 5s t8n>>[[Hire Trainer (costs $300)|trainer][$money -= 300]]&nbsp;&nbsp;&nbsp;&nbsp;[[Work with Coach (free)|coach]]&nbsp;&nbsp;&nbsp;&nbsp;
                 [[Buy Steroids (costs $200)|roids][$money -= 200]]&nbsp;&nbsp;&nbsp;&nbsp;[[Go with the Flow (free)|flow]]<</timed>>
                 <</linkappend>><</timed>>

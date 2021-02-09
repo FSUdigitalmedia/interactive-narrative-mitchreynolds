@@ -13,6 +13,8 @@ Mitch Reynolds
 
 :: StoryInit
 <<set $money to 0>>
+<pre><code><nowiki><<character 'agent' '../assets/agent.png'>></nowiki></code></pre>
+<pre><code><nowiki><<character 'coach' '../assets/coach.png'>></nowiki></code></pre>
 
 :: Start
 After lighting up the nation in a great year of college basketball, you find yourself prepared to enter the NBA Draft.

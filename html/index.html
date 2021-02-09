@@ -98,7 +98,8 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://72AF93C7-7124-47C0-82B1-6601396EFAAA// --><tw-storydata name="NBA Dreams" startnode="26" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="72AF93C7-7124-47C0-82B1-6601396EFAAA" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="begin" tags="" position="100,100" size="100,100">You&#39;ve been drafted, and now it&#39;s time to negotiate your contract.
+	<!-- UUID://72AF93C7-7124-47C0-82B1-6601396EFAAA// --><tw-storydata name="NBA Dreams" startnode="26" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="72AF93C7-7124-47C0-82B1-6601396EFAAA" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.say{border:1px none #eee;overflow:auto}.say img{max-width:10%;float:left;margin-right:1em}.say p:first-of-type{font-weight:700;margin:.2em 0;border-bottom:1px none #eee}.say p:last-of-type{padding:.5em;margin:0}</style><script role="script" id="twine-user-script" type="text/twine-javascript">;!function(){"use strict";var t=new Map;function a(a,e){if(State.length)throw new Error("addCharacter() -> must be called before story starts");a&&e?(t.has(a)&&console.error('addCharacter() -> overwriting character "'+a+'"'),t.set(a,e)):console.error("addCharacter() -> invalid arguments")}function e(a,e,r,s){var n=$(document.createElement("div")).addClass(Util.slugify(e)+" say"),c=$(document.createElement("img")).attr("src",s||t.get(e)||"");return c.attr("src")&&c.attr("src").trim()&&n.append(c),n.append($(document.createElement("p")).wiki(e.toUpperFirst())).append($(document.createElement("p")).wiki(r)),a&&(a instanceof $||(a=$(a)),n.appendTo(a)),n}setup.say=e,setup.addCharacter=a,Macro.add("character",{handler:function(){a(this.args[0],this.args[1])}}),$(document).one(":passagestart",(function(){var a=Array.from(t.keys());a.push("say"),Macro.add(a,{tags:null,handler:function(){"say"!==this.name?e(this.output,this.name,this.payload[0].contents):e(this.output,this.args[0],this.payload[0].contents,this.args[1])}})}))}();
+</script><tw-passagedata pid="1" name="begin" tags="" position="100,100" size="100,100">You&#39;ve been drafted, and now it&#39;s time to negotiate your contract.
 
 &lt;&lt;nobr&gt;&gt;&lt;&lt;timed 1s t8n&gt;&gt;$teamchoice: &lt;&lt;next 1s&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Great to see you again, $name! Let&#39;s get this started, here&#39;s what we have in mind.&quot;&lt;&lt;/type&gt;&gt;&lt;br&gt;
     &lt;&lt;next 4s&gt;&gt;&lt;&lt;linkreplace &quot;View Offer&quot;&gt;&gt;
@@ -122,17 +123,15 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 $teamchoice: &lt;&lt;type 40ms&gt;&gt;&quot;Excellent! Happy to have you on the $teamchoice!&quot;&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;timed 3s t8n&gt;&gt;[[Continue|next3]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="next3" tags="" position="725,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
-
-You get a call from your agent
-[img[../assets/agent.png]]
+You get a call from your agent&lt;br&gt;
 &lt;&lt;nobr&gt;&gt;
-    &lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;What&#39;s up, $name? I got some bad news.&quot;&lt;&lt;/type&gt;&gt;&lt;br&gt;
-        &lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;What is it?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;type 40ms&gt;&gt;&quot;The $teamchoice just signed a big free agent who plays the same position as you. They&#39;re projected to start over you, so you&#39;re gonna have to get to work if you want minutes&quot;&lt;&lt;/type&gt;&gt;&lt;br&gt;
-            &lt;&lt;timed 7.5s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;What should I do?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I have some options lined up for you.&quot;&lt;&lt;/type&gt;&gt;
+    &lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;What&#39;s up, $name? I got some bad news.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
+        &lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//What is it?//&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;The $teamchoice just signed a big free agent who plays the same position as you. They&#39;re projected to start over you, so you&#39;re gonna have to get to work if you want minutes&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
+            &lt;&lt;timed 7.5s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//What should I do?//&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I have some options lined up for you.&quot;&lt;&lt;/type&gt;&gt;
             &lt;br&gt;&lt;&lt;type 30ms&gt;&gt;&quot;First, I can get you the best NBA trainer on the market. It&#39;s expensive but they&#39;re the best for a reason.
             &lt;br&gt;Or, it&#39;d be a good idea to get more work in with your coach. Earning your coach&#39;s trust will get you playing in no time.
-            &lt;br&gt;Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest.&quot;&lt;&lt;/type&gt;&gt;&lt;br&gt;
-                &lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Why can&#39;t I just vibe and let it take care of itself?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I mean if you really want to, but I don&#39;t think you&#39;ll get very far like that. Let me know what you want to do.&quot;&lt;&lt;/type&gt;&gt;&lt;br&gt;
+            &lt;br&gt;Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
+                &lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Why can&#39;t I just vibe and let it take care of itself?//&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I mean if you really want to, but I don&#39;t think you&#39;ll get very far like that. Let me know what you want to do.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
                 &lt;&lt;timed 5s t8n&gt;&gt;[[Hire Trainer (costs $300)|trainer][$money -= 300]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Work with Coach (free)|coach]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                 [[Buy Steroids (costs $200)|roids][$money -= 200]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Go with the Flow (free)|flow]]&lt;&lt;/timed&gt;&gt;
                 &lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -141,8 +140,7 @@ You get a call from your agent
     &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="coach" tags="" position="850,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
 
-[img[../assets/coach.png]]
-Coach: Hey, $name. Glad to see you want some more practice, lets get to work.
+&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;Hey, $name. Glad to see you want some more practice, lets get to work.&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
 Day after day for months, you spend time after practice doing individual drills with your coach.
 
@@ -275,7 +273,9 @@ After another month goes by without you improving your work ethic, the $teamchoi
 
 Despite this, you&#39;ve cemented your legacy as an all-time player with your play in this series.
 
-It&#39;s not a championship, but at least people know it wasn&#39;t your fault.</tw-passagedata><tw-passagedata pid="24" name="StoryAuthor" tags="" position="475,350" size="100,100">Mitch Reynolds</tw-passagedata><tw-passagedata pid="25" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;set $money to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Start" tags="" position="725,350" size="100,100">After lighting up the nation in a great year of college basketball, you find yourself prepared to enter the NBA Draft.
+It&#39;s not a championship, but at least people know it wasn&#39;t your fault.</tw-passagedata><tw-passagedata pid="24" name="StoryAuthor" tags="" position="475,350" size="100,100">Mitch Reynolds</tw-passagedata><tw-passagedata pid="25" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;set $money to 0&gt;&gt;
+&lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;</tw-passagedata><tw-passagedata pid="26" name="Start" tags="" position="725,350" size="100,100">After lighting up the nation in a great year of college basketball, you find yourself prepared to enter the NBA Draft.
 
 Your natural talent is obvious, but some scouts question your work ethic having coasted through college.
 
