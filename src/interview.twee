@@ -1,7 +1,6 @@
 :: Interview
 You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes dissecting everything you do.
 [img[../assets/executives2.png]]
-All of them seem to be forcing a smile, which makes you more nervous as they don't look like they want to be here.
 <<type 40ms>>"First of all, what is your name?"<</type>>
 <<timed 2s t8n>><<textbox "$name" "" "question1" autofocus>><</timed>>
 
