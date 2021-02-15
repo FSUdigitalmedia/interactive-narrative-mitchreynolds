@@ -3,18 +3,18 @@
 
 <<timed 1s t8n>>As expected, your physical gains have been through the roof. Your rapid rise has grabbed the attention of everyone throughout the league.
 
-<<next 2s>>Although most are impressed by your improvement, it has made many people suspicious, particularly your rival on the team.
+<<next 2s>>Although most are impressed by your improvement, it has made many people suspicious, particularly Nate, your rival on the team.
 
-<<next 3s>><<type 40ms>>Rival: "Wow, $name, you've certainly been growing. Find a new training regiment or something?<</type>>
+<<next 3s>><<type 40ms>>Nate: "Wow, $name, you've certainly been growing. Find a new training regiment or something?<</type>>
 <<next 4s>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Yeah, this new trainer is really helping me">><br>
     <<type 40ms>>"So you're telling me this is all natural?"<</type>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Of course it is, why do you ask?">><br><br><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><br>
-    <<timed 7s t8n>>[[Give Rival Steroids|give]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Keep Denying|deny]]<</timed>><</linkappend>><</timed>>
+    <<timed 7s t8n>>[[Give Nate Steroids|give]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Keep Denying|deny]]<</timed>><</linkappend>><</timed>>
 <</linkappend>>
 <</timed>>
 
 :: deny
 
-<<type 40ms>>Rival: "Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>>
+<<type 40ms>>Nate: "Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>>
 
 <!-- insert linkappend conversation --><<timed 4s t8n>>You get another call from your agent
 [img[../assets/agent.png]]
@@ -24,14 +24,18 @@
 
 :: give
 
-<<type 40ms>>Rival: I knew you'd crack. This was the best decision for the both of us.<</type>>
+<<type 40ms>>Nate: I knew you'd crack. This was the best decision for the both of us.<</type>>
 
 <<timed 4s t8n>>4 months later<br>
 <!-- insert linkappend conversation --><<next 2s>>You get another call from your agent
 [img[../assets/agent.png]]
-<<next 1s>><<type 40ms>>"Bad news, $name. Your rival has exploded this year and its not looking good for your playing time. If you don't show major improvements soon, I'm afraid you'll never see the starting lineup"<</type>><br>
+<<next 1s>><<type 40ms>>"Bad news, $name. Nate Young has exploded this year and its not looking good for your playing time. If you don't show major improvements soon, I'm afraid you'll never see the starting lineup"<</type>><br>
 <<next 5s>>So what should I do?<br>
 <<next 3s>><<type 40ms>>"I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know what I need to set up."<</type>><br>
 <<next 9s>>[[Work with Coach|coach2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Hire Trainer|trainer2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Take More Steroids|roids2]]
 <</timed>>
 <!-- expand these 3 paths -->
+
+:: coach2
+
+Second coach passage

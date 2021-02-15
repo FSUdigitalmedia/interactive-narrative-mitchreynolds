@@ -41,7 +41,7 @@ $teamchoice: <<type 40ms>>"Excellent! Happy to have you on the $teamchoice!"<</t
 You get a call from your agent<br>
 <<nobr>>
     <<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"What's up, $name? I got some bad news."<</type>><</say>><br>
-        <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//What is it?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"The $teamchoice just signed a big free agent who plays the same position as you. They're projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><</say>><br>
+        <<timed 2s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//What is it?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"The $teamchoice just signed Nate Young, a big free agent who plays the same position as you. Nate is projected to start over you, so you're gonna have to get to work if you want minutes"<</type>><</say>><br>
             <<timed 7.5s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//What should I do?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I have some options lined up for you."<</type>>
             <br><<type 30ms>>"First, I can get you the best NBA trainer on the market. It's expensive but they're the best for a reason.
             <br>Or, it'd be a good idea to get more work in with your coach. Earning your coach's trust will get you playing in no time.
