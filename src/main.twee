@@ -15,6 +15,9 @@ Mitch Reynolds
 <<set $money to 0>>
 <pre><code><nowiki><<character 'agent' '../assets/agent.png'>></nowiki></code></pre>
 <pre><code><nowiki><<character 'coach' '../assets/coach.png'>></nowiki></code></pre>
+<pre><code><nowiki><<character 'trainer' '../assets/trainer.png'>></nowiki></code></pre>
+<pre><code><nowiki><<character 'doctor' '../assets/doctor.png'>></nowiki></code></pre>
+
 
 :: Start
 You are the star basketball player at your university. 
@@ -23,10 +26,15 @@ After a couple of great seasons, you have made the decision to end your college 
 
 Your natural talent is obvious, but some scouts question your work ethic having coasted through college, and wonder if you left too soon.
 
+To prepare for the draft, you hire an agent.
+
 [[Continue|next1]]
 
 :: next1
-Choose a team which you would like to be drafted by.
+You get a call from your agent<br>
+<<nobr>>
+    <<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"What's up, champ? I've got teams calling me left and right showing interest in drafting you. We can only set up an interview with 1 team, so let me know where you want to go."<</type>><</say>><br>
+        <<timed 8s t8n>>Choose a team to meet with.<br>
 <<listbox "$teamchoice">>
     <<option "None">>
 	<<option "Atlanta Hawks">>
@@ -58,13 +66,16 @@ Choose a team which you would like to be drafted by.
     <<option "Toronto Raptors">>
     <<option "Utah Jazz">>
     <<option "Washington Wizards">>
-<</listbox>>
+<</listbox>><br><br>
 
-[[Continue|next2]]
+[[Continue|next2]]<</timed>>
+    <</linkreplace>>
+<</nobr>>
+
 
 :: next2
-You have chosen to meet with the $teamchoice
+<<nobr>>
+    <<say 'agent' '../assets/agent.png'>><<type 40ms>>"Great, I'll let the $teamchoice know you're ready to come meet with them. The interview will let you make a good first impression while they judge you as a prospect."<</type>><</say>><br>
+<</nobr>>
 
-Your agent has set up a pre-draft interview for them to judge you as a prospect.
-
-[[Interview]]
+<<timed 8s t8n>>[[Interview]]<</timed>>

@@ -1,11 +1,11 @@
 :: Interview
 You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes dissecting everything you do.
-[img[../assets/executives2.png]]
+[img[../assets/executives.png]]
 <<type 40ms>>"First of all, what is your name?"<</type>>
 <<timed 2s t8n>><<textbox "$name" "" "question1" autofocus>><</timed>>
 
 :: question1
-[img[../assets/executives2.png]]<br>
+[img[../assets/executives.png]]<br>
 <<type 40ms>>"Glad to have you here, $name, what would you say your playstyle is like?"<</type>>
 <<timed 3s t8n>><<listbox "$playstyle">>
     <<option "None" 1>>
@@ -17,7 +17,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 [[Continue|question2]]<</timed>>
 
 :: question2
-[img[../assets/executives2.png]]<br>
+[img[../assets/executives.png]]<br>
 <<nobr>>
     <<if $playstyle is 1>><<type 40ms>>"You don't have a playstyle? I think we're done here."<br><br>[[Leave Room|lose]]<</type>><</if>>
     <<if $playstyle is 2>><<type 40ms>>"A great finisher is key to a professional offense."<</type>><</if>>
@@ -35,7 +35,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 [[Continue|question3]]<</timed>><</if>>
 
 :: question3
-[img[../assets/executives2.png]]<br>
+[img[../assets/executives.png]]<br>
 <<nobr>>
     <<if $mostimportant is 1>><<type 40ms>>"Nothing's important to you? I think we're done here."<br><br>[[Leave Room|lose]]<</type>><</if>>
     <<if $mostimportant is 2>><<type 40ms>>"We are here to win championships, glad you're on the same page."<</type>><</if>>
@@ -53,7 +53,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 [[Continue|question4]]<</timed>><</if>>
 
 :: question4
-[img[../assets/executives2.png]]<br>
+[img[../assets/executives.png]]<br>
 <<nobr>>
     <<if $prepared is 1>><<type 40ms>>"You've got nothing? I think that'll do it for us."<br><br>[[Leave Room|lose]]<</type>><</if>>
     <<if $prepared is 2>><<type 40ms>>"That's what we like to hear."<</type>><</if>>

@@ -1,32 +1,30 @@
 :: trainer
 <span id="money">Money: $money</span>
 
-You have hired a professional trainer to help you work on your game.
+<<nobr>><<say 'trainer' '../assets/trainer.png'>><<type 40ms>>"Nice to meet you, $name. Let's go through some drills first."<</type>><</say>><br>
+<</nobr>>
 
-Trainer: "Nice to meet you, $name. Let's go through some drills first."
-
-[[Continue|next4]]
+<<timed 3s t8n>>[[Do Drills|next4]]<</timed>>
 
 :: next4
 <span id="money">Money: $money</span>
 
-After months of exhausting workouts, you take it easy and get some rest in preparation for the season.
-
-You get another call from your agent
-[img[../assets/agent.png]]
-
-Agent: "I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated to start on opening night next week! Rest up, you have quite the season ahead of you!
-
-[[Continue|next5]]
+After months of exhausting workouts, you take it easy and get some rest in preparation for the season.<br>
+<<timed 2.5s t8n>>You get another call from your agent<br>
+    <<next 1s>><<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated to start on opening night next week! Rest up, you have quite the season ahead of you!"<</type>><</say>>
+    <</linkreplace>>
+<<next 10s>>[[Begin the Season|next5]]<</timed>>
 
 :: next5
 
-6 months later
+<<timed 1s t8n>>6 months later
 
-With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
+<<next 2s>>With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
 
-In just the last week of the season, you land wrong and injure your knee. Luckily it is minor, but the team doctors say you will probably have to miss the first round, warning you of the risk for much worse reinjury.
+<<next 4s>>In just the last week of the season, you land wrong and injure your knee. Luckily it is minor, but the team doctors say you will probably have to miss the first round, warning you of the risk for much worse reinjury.
 
-However, as the best player on the team, you feel pressured to not let down your coaches and teammates. It seems your coach wants you to play, but he's leaving the final decision up to you.
+<<next 5s>>However, as the best player on the team, you feel pressured to not let down your coaches and teammates. Your coach calls you over to talk.
+<<linkreplace "Talk to Coach">><<say 'coach' '../assets/coach.png'>><<type 40ms>>"The doctors just gave me the report, looks like you're gonna be fine. They're strongly reccomending that you sit out the first round, but I think we both know how our chances look without you in the game. I'm leaving the decision up to you, just let me know what you want to do."<</type>><</say>>
+<</linkreplace>>
 
-[[Take the Risk and Play|play]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Sit Out and Fully Heal|sit]]
+<<next 13s>>[[Take the Risk and Play|play]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Sit Out and Fully Heal|sit]]<</timed>>

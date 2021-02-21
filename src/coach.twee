@@ -1,18 +1,18 @@
 :: coach
 <span id="money">Money: $money</span>
 
-<<say 'coach' '../assets/coach.png'>><<type 40ms>>Hey, $name. Glad to see you want some more practice, lets get to work.<</type>><</say>>
+<<say 'coach' '../assets/coach.png'>><<type 40ms>>"Hey, $name. Glad to see you want some more practice, lets get to work."<</type>><</say>>
 
-Day after day for months, you spend time after practice doing individual drills with your coach.
+<<timed 4.5s t8n>>Day after day for months, you spend time after practice doing individual drills with your coach.
 
-Coach: I gotta say, $name, I'm very impressed with the dedication you've shown me. I'm fully confident in your ability to run our offense and win us games. We're still a few weeks out from the season opener, but for now you're the favorite to be a starter.
+<<next 4s>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"I gotta say, $name, I'm very impressed with the dedication you've shown me. I'm fully confident in your ability to run our offense and win us games. We're still a few weeks out from the season opener, but for now you're the favorite to be a starter."<</type>><</say>>
 
-[[Continue|next6]]
+<<next 11s>>[[Continue|next6]]<</timed>>
 
 :: next6
 
 The regular season arrives, and you have retained your spot on the starting lineup. Your coach and teammates expect you to be the leader on the court, as you know the offense better than any of your teammates.
 
-Behind your leadership and stellar performances, the $teamchoice have a strong start to the season and emerge a a true playoff contender.
+<<timed 5s t8n>>Behind your leadership and stellar performances, the $teamchoice have a strong start to the season and emerge as a true playoff contender.
 
-[[Continue|next5]]
+<<next 5s>>[[Continue to Season|next5]]<</timed>>
