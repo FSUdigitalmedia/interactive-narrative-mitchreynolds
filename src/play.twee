@@ -1,4 +1,6 @@
 :: play
+<span id="money">Money: $money</span>
+
 Your coach smiles as you tell him you're not going to sit out.
 
 <<timed 2s t8n>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"I was hoping you'd say that. Let's prepare for these playoffs."<</type>><</say>>
@@ -15,6 +17,7 @@ Your coach smiles as you tell him you're not going to sit out.
 
 
 :: game2
+<span id="money">Money: $money</span>
 
 The first half of game 2 looks much like the previous game with you scoring at will, showing no signs of injury.
 

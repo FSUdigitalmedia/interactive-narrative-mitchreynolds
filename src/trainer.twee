@@ -16,6 +16,7 @@ After months of exhausting workouts, you take it easy and get some rest in prepa
 <<next 10s>>[[Begin the Season|next5]]<</timed>>
 
 :: next5
+<span id="money">Money: $money</span>
 
 <<timed 1s t8n>>6 months later
 

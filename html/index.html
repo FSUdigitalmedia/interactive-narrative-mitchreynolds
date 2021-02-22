@@ -118,11 +118,14 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
         2 years&lt;br&gt;$625 per year&lt;br&gt;15 minutes per game&lt;br&gt;&lt;br&gt;
         [[Accept Offer|accept][$money to 625]]&amp;nbsp; &amp;nbsp; &amp;nbsp;[[Decline Offer|decline]]
     &lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="decline" tags="" position="475,100" size="100,100">Sorry it couldn&#39;t work out, $name.</tw-passagedata><tw-passagedata pid="5" name="accept" tags="" position="600,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="decline" tags="" position="475,100" size="100,100">Sorry it couldn&#39;t work out, $name.
+
+&lt;h2&gt;You Lose&lt;/h2&gt;</tw-passagedata><tw-passagedata pid="5" name="accept" tags="" position="600,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
 
 $teamchoice: &lt;&lt;type 40ms&gt;&gt;&quot;Excellent! Happy to have you on the $teamchoice!&quot;&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;timed 3s t8n&gt;&gt;[[Continue|next3]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="next3" tags="" position="725,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
 You get a call from your agent&lt;br&gt;
 &lt;&lt;nobr&gt;&gt;
     &lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;What&#39;s up, $name? I got some bad news.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
@@ -132,7 +135,7 @@ You get a call from your agent&lt;br&gt;
             &lt;br&gt;Or, it&#39;d be a good idea to get more work in with your coach. Earning your coach&#39;s trust will get you playing in no time.
             &lt;br&gt;Finally, I have connections that can get you any type of steroids you want. Definitely the most effective option, but by far the riskiest.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
                 &lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Why can&#39;t I just vibe and let it take care of itself?//&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I mean if you really want to, but I don&#39;t think you&#39;ll get very far like that. Let me know what you want to do.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
-                &lt;&lt;timed 5s t8n&gt;&gt;[[Hire Trainer (costs $300)|trainer][$money -= 300]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Work with Coach (free)|coach]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                &lt;&lt;timed 5s t8n&gt;&gt;[[Hire Trainer (costs $250)|trainer][$money -= 250]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Work with Coach (free)|coach]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                 [[Buy Steroids (costs $200)|roids][$money -= 200]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Go with the Flow (free)|flow]]&lt;&lt;/timed&gt;&gt;
                 &lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;
             &lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -158,7 +161,9 @@ The commissioner comes to the stage:&lt;br&gt;
 &lt;&lt;next 5s&gt;&gt;&lt;h2&gt;$name!&lt;/h2&gt;
 
 &lt;&lt;next 1s&gt;&gt;[[Start Your Career|begin]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="finals" tags="" position="1225,100" size="100,100">This is the moment you&#39;ve been waiting for, the finals. You want to celebrate, but the job isn&#39;t over just yet.
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="finals" tags="" position="1225,100" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+This is the moment you&#39;ve been waiting for, the finals. You want to celebrate, but the job isn&#39;t over just yet.
 
 &lt;&lt;timed 3s t8n&gt;&gt;You and your teammates are locked in for the whole week of practice, exhausting yourselves in preparation.
 
@@ -170,7 +175,9 @@ The commissioner comes to the stage:&lt;br&gt;
 
 &lt;&lt;next 3s&gt;&gt;You think over your options to yourself. Do you go out with them? Convince them to stay in? Just stay home and let them go?
 
-&lt;&lt;next 5s&gt;&gt;[[Go Out With Your Team|out]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Convince Them to Stay In|convince]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Stay Home and Mind Your Business|stayhome]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="out" tags="" position="100,225" size="100,100">You decide to take your coach&#39;s advice and have some fun with your team for the night.
+&lt;&lt;next 5s&gt;&gt;[[Go Out With Your Team|out]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Convince Them to Stay In|convince]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Stay Home and Mind Your Business|stayhome]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="out" tags="" position="100,225" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+You decide to take your coach&#39;s advice and have some fun with your team for the night.
 
 &lt;&lt;timed 3s t8n&gt;&gt;You have some much needed time off in the city, and the team returns to their homes.
 
@@ -178,13 +185,17 @@ The commissioner comes to the stage:&lt;br&gt;
 
 &lt;&lt;next 3s&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;When I said to go out and have fun, I didn&#39;t mean go party all night! I am extremely disappointed in you guys, lets go try to get ready for this game.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
-&lt;&lt;next 8s&gt;&gt;[[Continue|next8]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="next8" tags="" position="225,225" size="100,100">Your team&#39;s low energy carries over to the game.
+&lt;&lt;next 8s&gt;&gt;[[Continue|next8]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="next8" tags="" position="225,225" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Your team&#39;s low energy carries over to the game.
 
 &lt;&lt;timed 2s t8n&gt;&gt;The other team looks better than you in every aspect of the game, leading to an embarassing blowout loss.
 
 &lt;&lt;next 4s&gt;&gt;Your team never recovers from this blow, and you easily lose the finals 4 games to 0.
 
-&lt;&lt;next 3s&gt;&gt;[[Continue|lose4]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="stayhome" tags="" position="350,225" size="100,100">Not wanting to ruin your friends&#39; fun, you say nothing and decide to stay home.
+&lt;&lt;next 3s&gt;&gt;[[Continue|lose4]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="stayhome" tags="" position="350,225" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Not wanting to ruin your friends&#39; fun, you say nothing and decide to stay home.
 
 &lt;&lt;timed 3s t8n&gt;&gt;The next morning, you see just how much fun you missed out on as you watch your teammates walk around half-asleep.
 
@@ -198,7 +209,9 @@ The commissioner comes to the stage:&lt;br&gt;
 
 &lt;&lt;next 3s&gt;&gt;Unable to do it all by yourself, the $teamchoice fall in game 7 and are named runner-up.
 
-&lt;&lt;next 4s&gt;&gt;[[Continue|lose5]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="convince" tags="" position="475,225" size="100,100">You quickly jump in, reminding everyone how much is at stake and why they definitely should not be going out.
+&lt;&lt;next 4s&gt;&gt;[[Continue|lose5]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="convince" tags="" position="475,225" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+You quickly jump in, reminding everyone how much is at stake and why they definitely should not be going out.
 
 &lt;&lt;timed 4s t8n&gt;&gt;Many give you judging looks, but as the team&#39;s leader, they all agree to listen to you and rest up.
 
@@ -210,17 +223,18 @@ The commissioner comes to the stage:&lt;br&gt;
 
 &lt;&lt;next 4s&gt;&gt;&lt;h2&gt;You have won the NBA Finals!&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="flow" tags="" position="600,225" size="100,100">Your agent seems dumbfounded by your decision.
 
-You don&#39;t care, as you&#39;re about to experience the true NBA life of partying and going out every night.
+&lt;&lt;timed 2s t8n&gt;&gt;You don&#39;t care, as you&#39;re about to experience the true NBA life of partying and going out every night.
 
-After failing to show up on time to any of the pre-season practices, the $teamchoice are furious with your disinterest.
+&lt;&lt;next 3.5s&gt;&gt;After failing to show up on time to any of the pre-season practices, the $teamchoice are furious with your disinterest.
 
-After another month goes by without you improving your work ethic, the $teamchoice decide to cut you from the team for being nothing but a distraction.</tw-passagedata><tw-passagedata pid="16" name="Interview" tags="" position="725,225" size="100,100">You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes dissecting everything you do.
+&lt;&lt;next 3.5s&gt;&gt;After another month goes by without you improving your work ethic, the $teamchoice decide to cut you from the team for being nothing but a distraction.
+&lt;&lt;next 4s&gt;&gt;&lt;h2&gt;You Lose&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Interview" tags="" position="725,225" size="100,100">You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes dissecting everything you do.
 [img[../assets/executives.png]]
 &lt;&lt;type 40ms&gt;&gt;&quot;First of all, what is your name?&quot;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;textbox &quot;$name&quot; &quot;&quot; &quot;question1&quot; autofocus&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="question1" tags="" position="850,225" size="100,100">[img[../assets/executives.png]]&lt;br&gt;
 &lt;&lt;type 40ms&gt;&gt;&quot;Glad to have you here, $name, what would you say your playstyle is like?&quot;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;listbox &quot;$playstyle&quot;&gt;&gt;
-    &lt;&lt;option &quot;None&quot; 1&gt;&gt;
+    &lt;&lt;option &quot;Select Answer&quot; 1&gt;&gt;
 	&lt;&lt;option &quot;Aggressive, always looking to score at the rim&quot; 2&gt;&gt;
 	&lt;&lt;option &quot;I value passing and always try to involve my teammates before myself&quot; 3&gt;&gt;
 	&lt;&lt;option &quot;Great outside scorer, able to shoot from anywhere&quot; 4&gt;&gt;
@@ -235,7 +249,7 @@ After another month goes by without you improving your work ethic, the $teamchoi
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if $playstyle gt &quot;1&quot;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;What would you say is most important to you in basketball?&quot;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 4s t8n&gt;&gt;&lt;&lt;listbox &quot;$mostimportant&quot;&gt;&gt;
-    &lt;&lt;option &quot;None&quot; 1&gt;&gt;
+    &lt;&lt;option &quot;Select Answer&quot; 1&gt;&gt;
 	&lt;&lt;option &quot;Winning is all that matters, I will do whatever is needed to help the team win&quot; 2&gt;&gt;
 	&lt;&lt;option &quot;Individual stats. As long as my numbers are up, I&#39;m not concerned&quot; 3&gt;&gt;
 	&lt;&lt;option &quot;The money. I&#39;m excited to live life to the fullest.&quot; 4&gt;&gt;
@@ -250,7 +264,7 @@ After another month goes by without you improving your work ethic, the $teamchoi
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if $playstyle gt &quot;1&quot;&gt;&gt;&lt;&lt;type 35ms&gt;&gt;&quot;Last question, $name. Do you think you&#39;re prepared to put in the necessary time and work to succeed in this league?&quot;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 4s t8n&gt;&gt;&lt;&lt;listbox &quot;$prepared&quot;&gt;&gt;
-    &lt;&lt;option &quot;None&quot; 1&gt;&gt;
+    &lt;&lt;option &quot;Select Answer&quot; 1&gt;&gt;
 	&lt;&lt;option &quot;Without a doubt, I&#39;m ready to do whatever it takes.&quot; 2&gt;&gt;
 	&lt;&lt;option &quot;Well yeah, but with how good I am, I don&#39;t think I&#39;ll need much work.&quot; 3&gt;&gt;
 	&lt;&lt;option &quot;You mean I&#39;m not allowed to just go party every night?&quot; 4&gt;&gt;
@@ -265,26 +279,32 @@ After another month goes by without you improving your work ethic, the $teamchoi
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if $prepared gt &quot;1&quot;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Anyways, that&#39;s all the time we have for you today. The $teamchoice hope to be in contact with you soon&quot;&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 6s t8n&gt;&gt;[[Proceed to Draft|draftroom]]&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="lose" tags="" position="100,350" size="100,100">You&#39;ve bombed your interview and nobody wants to draft you.</tw-passagedata><tw-passagedata pid="22" name="lose4" tags="" position="225,350" size="100,100">The $teamchoice have lost in the finals.
+&lt;&lt;timed 6s t8n&gt;&gt;[[Proceed to Draft|draftroom]]&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="lose" tags="" position="100,350" size="100,100">You&#39;ve bombed your interview and nobody wants to draft you.
 
-2nd place is good, but nobody wants silver.</tw-passagedata><tw-passagedata pid="23" name="lose5" tags="" position="350,350" size="100,100">The $teamchoice have been eliminated in the finals.
+&lt;h2&gt;You Lose&lt;/h2&gt;</tw-passagedata><tw-passagedata pid="22" name="lose4" tags="" position="225,350" size="100,100">The $teamchoice have lost in the finals.
 
-Despite this, you&#39;ve cemented your legacy as an all-time player with your play in this series.
+&lt;&lt;timed 2s t8n&gt;&gt;2nd place is good, but nobody wants silver.
 
-It&#39;s not a championship, but at least people know it wasn&#39;t your fault.</tw-passagedata><tw-passagedata pid="24" name="StoryAuthor" tags="" position="475,350" size="100,100">Mitch Reynolds</tw-passagedata><tw-passagedata pid="25" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;set $money to 0&gt;&gt;
+&lt;&lt;next 3s&gt;&gt;&lt;h2&gt;Game Over&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="lose5" tags="" position="350,350" size="100,100">The $teamchoice have been eliminated in the finals.
+
+&lt;&lt;timed 2s t8n&gt;&gt;Despite this, you&#39;ve cemented your legacy as an all-time player with your play in this series.
+
+&lt;&lt;next 3s&gt;&gt;It&#39;s not a championship, but at least people know it wasn&#39;t your fault.
+
+&lt;&lt;next 4s&gt;&gt;&lt;h2&gt;Game Over&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="StoryAuthor" tags="" position="475,350" size="100,100">Mitch Reynolds</tw-passagedata><tw-passagedata pid="25" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;set $money to 0&gt;&gt;
 &lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;trainer&#39; &#39;../assets/trainer.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;doctor&#39; &#39;../assets/doctor.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;</tw-passagedata><tw-passagedata pid="26" name="Start" tags="" position="725,350" size="100,100">You look around the room at the joyful faces of your friends and family.
+&lt;pre&gt;&lt;code&gt;&lt;nowiki&gt;&lt;&lt;character &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;/nowiki&gt;&lt;/code&gt;&lt;/pre&gt;</tw-passagedata><tw-passagedata pid="26" name="Start" tags="" position="725,350" size="100,100">You look around the room at the joyful faces of your friends and family, feeling nervous and excited for the future.
 
-After a couple of great seasons as the star of your university&#39;s basketball team, you have made the decision to end your college career and enter the NBA Draft.
+After a couple of great seasons as the star of your university&#39;s basketball team, you have just made the decision to end your college career and enter the NBA Draft.
 
 Your natural talent is obvious, but some scouts question your work ethic having coasted through college, and wonder if you left too soon.
 
-To help you prepare for the draft, you hire an agent.
+To help you prepare for the draft, you figure you should hire an agent.
 
-[[Continue|next1]]</tw-passagedata><tw-passagedata pid="27" name="next1" tags="" position="850,350" size="100,100">You get a call from your agent&lt;br&gt;
+[[Hire Agent|next1]]</tw-passagedata><tw-passagedata pid="27" name="next1" tags="" position="850,350" size="100,100">You get a call from your new agent&lt;br&gt;
 &lt;&lt;nobr&gt;&gt;
     &lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;What&#39;s up, champ? I&#39;ve got teams calling me left and right showing interest in drafting you. We can only set up an interview with 1 team, so let me know where you want to go.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
         &lt;&lt;timed 8s t8n&gt;&gt;Choose a team to meet with.&lt;br&gt;
@@ -321,13 +341,15 @@ To help you prepare for the draft, you hire an agent.
     &lt;&lt;option &quot;Washington Wizards&quot;&gt;&gt;
 &lt;&lt;/listbox&gt;&gt;&lt;br&gt;&lt;br&gt;
 
-[[Continue|next2]]&lt;&lt;/timed&gt;&gt;
+[[Confirm Team|next2]]&lt;&lt;/timed&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="next2" tags="" position="975,350" size="100,100">&lt;&lt;nobr&gt;&gt;
     &lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Great, I&#39;ll let the $teamchoice know you&#39;re ready to come meet with them. The interview will let you make a good first impression while they judge you as a prospect.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-&lt;&lt;timed 8s t8n&gt;&gt;[[Interview]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="play" tags="" position="1100,350" size="100,100">Your coach smiles as you tell him you&#39;re not going to sit out.
+&lt;&lt;timed 8s t8n&gt;&gt;[[Head to Interview]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="play" tags="" position="1100,350" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Your coach smiles as you tell him you&#39;re not going to sit out.
 
 &lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I was hoping you&#39;d say that. Let&#39;s prepare for these playoffs.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
@@ -339,7 +361,9 @@ To help you prepare for the draft, you hire an agent.
 
 &lt;&lt;next 4s&gt;&gt;Game 1 ends in an easy victory. With spirits high, you leave and prepare for the next game.
 
-&lt;&lt;next 3s&gt;&gt;[[Game 2|game2]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="game2" tags="" position="1225,350" size="100,100">The first half of game 2 looks much like the previous game with you scoring at will, showing no signs of injury.
+&lt;&lt;next 3s&gt;&gt;[[Game 2|game2]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="game2" tags="" position="1225,350" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+The first half of game 2 looks much like the previous game with you scoring at will, showing no signs of injury.
 
 &lt;&lt;timed 3s t8n&gt;&gt;Right before halftime, you jump for a rebound and land awkwardly on your bad knee. Your knee gives out, and you know immediately that your season is over.
 
@@ -359,28 +383,38 @@ To help you prepare for the draft, you hire an agent.
     &lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;So you&#39;re telling me this is all natural?&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Of course it is, why do you ask?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;C&#39;mon, $name, I&#39;m not that dumb. I&#39;ll tell you what, though. If you can hook me up with whatever you&#39;ve been taking, the league doesn&#39;t have to know.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
     &lt;&lt;timed 7s t8n&gt;&gt;[[Give Nate Steroids|give]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Keep Denying|deny]]&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="deny" tags="" position="225,475" size="100,100">&lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Oh, so it&#39;s like that? I guess we&#39;ll just have to see what the league thinks.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="deny" tags="" position="225,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Oh, so it&#39;s like that? I guess we&#39;ll just have to see what the league thinks.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
 &lt;&lt;timed 4s t8n&gt;&gt;You get another call from your agent&lt;br&gt;
 &lt;&lt;next 1s&gt;&gt;&lt;&lt;linkappend &quot;Answer Phone&quot;&gt;&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you&#39;ve been kicked out of the NBA.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
 
-&lt;&lt;next 12s&gt;&gt;&lt;h2&gt;You Lose&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="give" tags="" position="350,475" size="100,100">&lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I knew you&#39;d crack. This was the best decision for the both of us.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
+&lt;&lt;next 12s&gt;&gt;&lt;h2&gt;You Lose&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="give" tags="" position="350,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;say &#39;nate&#39; &#39;../assets/nate.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I knew you&#39;d crack. This was the best decision for the both of us.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
 &lt;&lt;timed 4s t8n&gt;&gt;//4 months later//&lt;br&gt;
 &lt;&lt;next 2s&gt;&gt;You get another call from your agent&lt;br&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 7s t8n&gt;&gt;&lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Bad news, $name. Nate Young has exploded so far this year and its not looking good for your playing time. If you don&#39;t show major improvements soon, I&#39;m afraid you&#39;ll never see the starting lineup&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
     &lt;&lt;timed 8.5s t8n&gt;&gt;&lt;&lt;linkappend &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//So what should I do?//&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know if I need to set anything up.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
-    &lt;&lt;timed 9s t8n&gt;&gt;[[Work with Coach|coach2]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Hire Trainer|trainer2]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Take More Steroids|roids2]]&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="coach2" tags="" position="475,475" size="100,100">&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Hey, $name. Glad to see you want some more practice. You looked great in the offseason, but Nate has been something else this year. Let&#39;s get to work and shorten the gap.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
+    &lt;&lt;timed 9s t8n&gt;&gt;[[Hire Trainer (costs $250)|trainer2][$money -= 250]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Work with Coach (free)|coach2]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Buy Steroids (costs $200)|roids2][$money -= 200]]&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="coach2" tags="" position="475,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Hey, $name. Glad to see you want some more practice. You looked great in the offseason, but Nate has been something else this year. Let&#39;s get to work and shorten the gap.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
 &lt;&lt;timed 6s t8n&gt;&gt;Every day after practice and games, you get extra work in with your coach. Your hard work, along with the steroids of course, is beginning to pay off as your minutes increase.
 
 &lt;&lt;next 4s&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I gotta say, $name, I&#39;m very impressed with the dedication and progress you&#39;ve shown me throughout this season. Teams are beginning to figure out how to stop Nate, and I think you&#39;re what we need to keep winning. Be ready for this next game, I&#39;m putting you in the starting lineup.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
-&lt;&lt;next 13s&gt;&gt;[[Continue|next9]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="next9" tags="" position="600,475" size="100,100">You&#39;ve been placed in the starting lineup and have been excelling in your new role. Your game speaks for itself, and your coach and teammates now expect you to be the leader on the court.
+&lt;&lt;next 13s&gt;&gt;[[Continue|next9]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="next9" tags="" position="600,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+You&#39;ve been placed in the starting lineup and have been excelling in your new role. Your game speaks for itself, and your coach and teammates now expect you to be the leader on the court.
 
 &lt;&lt;timed 5s t8n&gt;&gt;Behind your leadership and stellar performances, the $teamchoice enter the final weeks of the regular season in playoff position.
 
-&lt;&lt;next 5s&gt;&gt;[[Continue|next10]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="next10" tags="" position="725,475" size="100,100">&lt;&lt;timed 1s t8n&gt;&gt;With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
+&lt;&lt;next 5s&gt;&gt;[[Continue|next10]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="next10" tags="" position="725,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
 
 &lt;&lt;next 4s&gt;&gt;In just the last week of the season, you land wrong and injure your knee. Luckily it is minor, but the team doctors say you will probably have to miss the first round, warning you of the risk for much worse reinjury.
 
@@ -388,14 +422,20 @@ To help you prepare for the draft, you hire an agent.
 &lt;&lt;linkreplace &quot;Talk to Coach&quot;&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;The doctors just gave me the report, looks like you&#39;re gonna be fine. They&#39;re strongly reccomending that you sit out the first round, but I think we both know how our chances look without you in the game. I&#39;m leaving the decision up to you, just let me know what you want to do.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
 
-&lt;&lt;next 13s&gt;&gt;[[Take the Risk and Play|play]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Sit Out and Fully Heal|sit]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="trainer2" tags="" position="850,475" size="100,100">&lt;&lt;nobr&gt;&gt;&lt;&lt;say &#39;trainer&#39; &#39;../assets/trainer.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Nice to meet you, $name. Let&#39;s go through some drills first.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
+&lt;&lt;next 13s&gt;&gt;[[Take the Risk and Play|play]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Sit Out and Fully Heal|sit]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="trainer2" tags="" position="850,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;nobr&gt;&gt;&lt;&lt;say &#39;trainer&#39; &#39;../assets/trainer.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Nice to meet you, $name. Let&#39;s go through some drills first.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;[[Do Drills|next11]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="next11" tags="" position="975,475" size="100,100">After months of spending all of your free time in the gym for exhausting workouts, you begin seeing major improvments in your playing time.&lt;br&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;[[Do Drills|next11]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="next11" tags="" position="975,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+After months of spending all of your free time in the gym for exhausting workouts, you begin seeing major improvments in your playing time.&lt;br&gt;
 &lt;&lt;timed 2.5s t8n&gt;&gt;You get another call from your agent&lt;br&gt;
     &lt;&lt;next 1s&gt;&gt;&lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I told you they&#39;re the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you&#39;ve been slated as a starter for tomorrow night&#39;s game! Rest up, your career is just getting started!&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;next 10s&gt;&gt;[[Continue|next9]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="roids2" tags="" position="1100,475" size="100,100">Just like the first time, you see immediate results from the steroids. You wonder if all this muscle is going to actually help you play better, but it&#39;s too late for that.
+&lt;&lt;next 10s&gt;&gt;[[Continue|next9]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="roids2" tags="" position="1100,475" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Just like the first time, you see immediate results from the steroids. You wonder if all this muscle is going to actually help you play better, but it&#39;s too late for that.
 
 &lt;&lt;timed 4s t8n&gt;&gt;Even more than before, you have attracted the attention of your whole team with your miraculous transformation.
 
@@ -412,7 +452,9 @@ To help you prepare for the draft, you hire an agent.
 &lt;&lt;next 1s&gt;&gt;&lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;This is it, $name. The league office just called and as I think you already know, you&#39;ve been kicked out of the league. We both knew the risks, but I really thought you&#39;d get away with it. Oh well, good luck with life outside the NBA.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
     &lt;&lt;timed 13s t8n&gt;&gt;&lt;h2&gt;You Lose&lt;/h2&gt;&lt;br&gt;
     &lt;&lt;next 1s&gt;&gt;On the bright side, you now have a great head start on a new career in bodybuilding.&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="sit" tags="" position="100,600" size="100,100">Your coach seems mildly dissapointed as you tell him you&#39;re going to sit out.
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="sit" tags="" position="100,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Your coach seems mildly dissapointed as you tell him you&#39;re going to sit out.
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Can&#39;t say that&#39;s what I wanted to hear, but I understand you don&#39;t want to take that risk.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
@@ -422,7 +464,9 @@ To help you prepare for the draft, you hire an agent.
 
 &lt;&lt;next 5s&gt;&gt;Your teammates rallied behind your absence and made it to the second round, where you will make your playoff debut.
 
-&lt;&lt;next 5s&gt;&gt;[[Continue to Round 2|round2]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="round2" tags="" position="225,600" size="100,100">It is the 2nd round of the playoffs, and you can barely wait to get some playoff action.
+&lt;&lt;next 5s&gt;&gt;[[Continue to Round 2|round2]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="round2" tags="" position="225,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+It is the 2nd round of the playoffs, and you can barely wait to get some playoff action.
 
 &lt;&lt;timed 3s t8n&gt;&gt;Your knee has almost fully healed, but you still have to consult with the doctors every day.
 
@@ -432,7 +476,9 @@ To help you prepare for the draft, you hire an agent.
 
 &lt;&lt;next 5s&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I&#39;m not gonna sugarcoat it this time, we need you in there if we want to win this round. You might be able to give us enough to win playing half minutes, but I&#39;m not overly confident in that. It&#39;s still your choice, let me know.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
-&lt;&lt;next 10s&gt;&gt;[[Play Full Minutes|play2]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Play Half Minutes|half]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="play2" tags="" position="350,600" size="100,100">As expected, you decide to suit up for the full game.
+&lt;&lt;next 10s&gt;&gt;[[Play Full Minutes|play2]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Play Half Minutes|half]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="play2" tags="" position="350,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+As expected, you decide to suit up for the full game.
 
 &lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;That what I like to hear, $name. Now go tell your teammates and get ready for the game.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
@@ -440,7 +486,9 @@ To help you prepare for the draft, you hire an agent.
 
 &lt;&lt;next 5s&gt;&gt;Your team wins the second round 4 games to 1, setting up a matchup against the best player in the league in the semifinals.
 
-&lt;&lt;next 5s&gt;&gt;[[Continue|next7]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="half" tags="" position="475,600" size="100,100">To the surprise of your coaches and teammates, you decide to play on a minutes restriction.
+&lt;&lt;next 5s&gt;&gt;[[Continue|next7]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="half" tags="" position="475,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+To the surprise of your coaches and teammates, you decide to play on a minutes restriction.
 
 &lt;&lt;timed 3s t8n&gt;&gt;The team isn&#39;t very happy with your decision, but you want to do everything you can to avoid serious injury.
 
@@ -454,11 +502,17 @@ To help you prepare for the draft, you hire an agent.
 
 &lt;&lt;next 5s&gt;&gt;[[Continue|lose2]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="lose2" tags="" position="600,600" size="100,100">You have been eliminated in the 2nd round of the playoffs.
 
-Not a complete loss, but certainly not a championship.</tw-passagedata><tw-passagedata pid="46" name="next7" tags="" position="725,600" size="100,100">Your coach calls you into his office ahead of the 3rd round matchup.
+&lt;&lt;timed 2s t8n&gt;&gt;Winning a playoff series is a great way to start your career, but round 2 isn&#39;t the goal.
+
+&lt;&lt;next 4s&gt;&gt;&lt;h2&gt;Game Over&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="next7" tags="" position="725,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+Your coach calls you into his office ahead of the 3rd round matchup.
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;say &#39;coach&#39; &#39;../assets/coach.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;We&#39;re about to face the best player in the league and he&#39;s been torching any defense he faces. I think we should have you matched up against him the whole game. You give us the best chance to stop them, but if you get cooked your reputation will take a serious blow.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
 
-&lt;&lt;next 12s&gt;&gt;[[Guard Best Player|guard]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Let Others Guard Them|others]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="guard" tags="" position="850,600" size="100,100">You step up to the challenge and decide to guard the best player the whole game.
+&lt;&lt;next 12s&gt;&gt;[[Guard Best Player|guard]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Let Others Guard Them|others]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="guard" tags="" position="850,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+You step up to the challenge and decide to guard the best player the whole game.
 
 &lt;&lt;timed 3s t8n&gt;&gt;As gametime rolls around, its clear to see why this team is so feared by defenses around the league.
 
@@ -468,7 +522,9 @@ Not a complete loss, but certainly not a championship.</tw-passagedata><tw-passa
 
 &lt;&lt;next 3s&gt;&gt;Eventually, the series comes down to a final game 7. You drop 40 points and run away with the victory.
 
-&lt;&lt;next 3s&gt;&gt;[[Proceed to the Finals|finals]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="others" tags="" position="975,600" size="100,100">You decide to let the defense play normally without the specific matchups.
+&lt;&lt;next 3s&gt;&gt;[[Proceed to the Finals|finals]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="others" tags="" position="975,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+You decide to let the defense play normally without the specific matchups.
 
 &lt;&lt;timed 3s t8n&gt;&gt;Your passiveness proves to be detrimental to your team&#39;s success. Their best player runs around your defense every play, scoring whenever and wherever they want.
 
@@ -478,7 +534,9 @@ Not a complete loss, but certainly not a championship.</tw-passagedata><tw-passa
 
 &lt;&lt;next 2s&gt;&gt;[[Continue|lose3]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="lose3" tags="" position="1100,600" size="100,100">You have been elimated in the semifinals of the playoffs.
 
-So close, yet so far.</tw-passagedata><tw-passagedata pid="50" name="trainer" tags="" position="1225,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+&lt;&lt;timed 2s t8n&gt;&gt;Painfully close to a championship, but at least you can learn from your mistakes.
+
+&lt;&lt;next 4s&gt;&gt;&lt;h2&gt;Game Over&lt;/h2&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="trainer" tags="" position="1225,600" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
 
 &lt;&lt;nobr&gt;&gt;&lt;&lt;say &#39;trainer&#39; &#39;../assets/trainer.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;Nice to meet you, $name. Let&#39;s go through some drills first.&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;&lt;br&gt;
 &lt;&lt;/nobr&gt;&gt;
@@ -489,7 +547,9 @@ After months of exhausting workouts, you take it easy and get some rest in prepa
 &lt;&lt;timed 2.5s t8n&gt;&gt;You get another call from your agent&lt;br&gt;
     &lt;&lt;next 1s&gt;&gt;&lt;&lt;linkreplace &quot;Answer Phone&quot;&gt;&gt;&lt;&lt;say &#39;agent&#39; &#39;../assets/agent.png&#39;&gt;&gt;&lt;&lt;type 40ms&gt;&gt;&quot;I told you they&#39;re the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you&#39;ve been slated to start on opening night next week! Rest up, you have quite the season ahead of you!&quot;&lt;&lt;/type&gt;&gt;&lt;&lt;/say&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;next 10s&gt;&gt;[[Begin the Season|next5]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="next5" tags="" position="225,725" size="100,100">&lt;&lt;timed 1s t8n&gt;&gt;6 months later
+&lt;&lt;next 10s&gt;&gt;[[Begin the Season|next5]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="next5" tags="" position="225,725" size="100,100">&lt;span id=&quot;money&quot;&gt;Money: $money&lt;/span&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;6 months later
 
 &lt;&lt;next 2s&gt;&gt;With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
 

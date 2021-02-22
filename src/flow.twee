@@ -1,8 +1,9 @@
 :: flow
 Your agent seems dumbfounded by your decision.
 
-You don't care, as you're about to experience the true NBA life of partying and going out every night.
+<<timed 2s t8n>>You don't care, as you're about to experience the true NBA life of partying and going out every night.
 
-After failing to show up on time to any of the pre-season practices, the $teamchoice are furious with your disinterest.
+<<next 3.5s>>After failing to show up on time to any of the pre-season practices, the $teamchoice are furious with your disinterest.
 
-After another month goes by without you improving your work ethic, the $teamchoice decide to cut you from the team for being nothing but a distraction.
+<<next 3.5s>>After another month goes by without you improving your work ethic, the $teamchoice decide to cut you from the team for being nothing but a distraction.
+<<next 4s>><h2>You Lose</h2><</timed>>

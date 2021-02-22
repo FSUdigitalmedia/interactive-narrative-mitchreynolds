@@ -21,18 +21,18 @@ Mitch Reynolds
 
 
 :: Start
-You look around the room at the joyful faces of your friends and family.
+You look around the room at the joyful faces of your friends and family, feeling nervous and excited for the future.
 
-After a couple of great seasons as the star of your university's basketball team, you have made the decision to end your college career and enter the NBA Draft.
+After a couple of great seasons as the star of your university's basketball team, you have just made the decision to end your college career and enter the NBA Draft.
 
 Your natural talent is obvious, but some scouts question your work ethic having coasted through college, and wonder if you left too soon.
 
-To help you prepare for the draft, you hire an agent.
+To help you prepare for the draft, you figure you should hire an agent.
 
-[[Continue|next1]]
+[[Hire Agent|next1]]
 
 :: next1
-You get a call from your agent<br>
+You get a call from your new agent<br>
 <<nobr>>
     <<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"What's up, champ? I've got teams calling me left and right showing interest in drafting you. We can only set up an interview with 1 team, so let me know where you want to go."<</type>><</say>><br>
         <<timed 8s t8n>>Choose a team to meet with.<br>
@@ -69,7 +69,7 @@ You get a call from your agent<br>
     <<option "Washington Wizards">>
 <</listbox>><br><br>
 
-[[Continue|next2]]<</timed>>
+[[Confirm Team|next2]]<</timed>>
     <</linkreplace>>
 <</nobr>>
 
@@ -79,4 +79,4 @@ You get a call from your agent<br>
     <<say 'agent' '../assets/agent.png'>><<type 40ms>>"Great, I'll let the $teamchoice know you're ready to come meet with them. The interview will let you make a good first impression while they judge you as a prospect."<</type>><</say>><br>
 <</nobr>>
 
-<<timed 8s t8n>>[[Interview]]<</timed>>
+<<timed 8s t8n>>[[Head to Interview]]<</timed>>

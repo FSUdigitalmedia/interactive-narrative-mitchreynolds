@@ -8,7 +8,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 [img[../assets/executives.png]]<br>
 <<type 40ms>>"Glad to have you here, $name, what would you say your playstyle is like?"<</type>>
 <<timed 3s t8n>><<listbox "$playstyle">>
-    <<option "None" 1>>
+    <<option "Select Answer" 1>>
 	<<option "Aggressive, always looking to score at the rim" 2>>
 	<<option "I value passing and always try to involve my teammates before myself" 3>>
 	<<option "Great outside scorer, able to shoot from anywhere" 4>>
@@ -26,7 +26,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 <</nobr>>
 <<if $playstyle gt "1">><<type 40ms>>"What would you say is most important to you in basketball?"<</type>>
 <<timed 4s t8n>><<listbox "$mostimportant">>
-    <<option "None" 1>>
+    <<option "Select Answer" 1>>
 	<<option "Winning is all that matters, I will do whatever is needed to help the team win" 2>>
 	<<option "Individual stats. As long as my numbers are up, I'm not concerned" 3>>
 	<<option "The money. I'm excited to live life to the fullest." 4>>
@@ -44,7 +44,7 @@ You sit across from 4 $teamchoice executives, feeling their scrutinizing eyes di
 <</nobr>>
 <<if $playstyle gt "1">><<type 35ms>>"Last question, $name. Do you think you're prepared to put in the necessary time and work to succeed in this league?"<</type>>
 <<timed 4s t8n>><<listbox "$prepared">>
-    <<option "None" 1>>
+    <<option "Select Answer" 1>>
 	<<option "Without a doubt, I'm ready to do whatever it takes." 2>>
 	<<option "Well yeah, but with how good I am, I don't think I'll need much work." 3>>
 	<<option "You mean I'm not allowed to just go party every night?" 4>>

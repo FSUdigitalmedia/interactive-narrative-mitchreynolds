@@ -1,4 +1,6 @@
 :: sit
+<span id="money">Money: $money</span>
+
 Your coach seems mildly dissapointed as you tell him you're going to sit out.
 
 <<timed 3s t8n>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"Can't say that's what I wanted to hear, but I understand you don't want to take that risk."<</type>><</say>>
@@ -12,6 +14,7 @@ Your coach seems mildly dissapointed as you tell him you're going to sit out.
 <<next 5s>>[[Continue to Round 2|round2]]<</timed>>
 
 :: round2
+<span id="money">Money: $money</span>
 
 It is the 2nd round of the playoffs, and you can barely wait to get some playoff action.
 
@@ -26,6 +29,7 @@ It is the 2nd round of the playoffs, and you can barely wait to get some playoff
 <<next 10s>>[[Play Full Minutes|play2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Play Half Minutes|half]]<</timed>>
 
 :: play2
+<span id="money">Money: $money</span>
 
 As expected, you decide to suit up for the full game.
 
@@ -38,6 +42,7 @@ As expected, you decide to suit up for the full game.
 <<next 5s>>[[Continue|next7]]<</timed>>
 
 :: half
+<span id="money">Money: $money</span>
 
 To the surprise of your coaches and teammates, you decide to play on a minutes restriction.
 
@@ -57,9 +62,12 @@ To the surprise of your coaches and teammates, you decide to play on a minutes r
 
 You have been eliminated in the 2nd round of the playoffs.
 
-Not a complete loss, but certainly not a championship.
+<<timed 2s t8n>>Winning a playoff series is a great way to start your career, but round 2 isn't the goal.
+
+<<next 4s>><h2>Game Over</h2><</timed>>
 
 :: next7
+<span id="money">Money: $money</span>
 
 Your coach calls you into his office ahead of the 3rd round matchup.
 
@@ -68,6 +76,7 @@ Your coach calls you into his office ahead of the 3rd round matchup.
 <<next 12s>>[[Guard Best Player|guard]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Let Others Guard Them|others]]<</timed>>
 
 :: guard
+<span id="money">Money: $money</span>
 
 You step up to the challenge and decide to guard the best player the whole game.
 
@@ -82,6 +91,7 @@ You step up to the challenge and decide to guard the best player the whole game.
 <<next 3s>>[[Proceed to the Finals|finals]]<</timed>>
 
 :: others
+<span id="money">Money: $money</span>
 
 You decide to let the defense play normally without the specific matchups.
 
@@ -97,4 +107,6 @@ You decide to let the defense play normally without the specific matchups.
 
 You have been elimated in the semifinals of the playoffs.
 
-So close, yet so far.
+<<timed 2s t8n>>Painfully close to a championship, but at least you can learn from your mistakes.
+
+<<next 4s>><h2>Game Over</h2><</timed>>
