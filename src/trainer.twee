@@ -18,7 +18,7 @@ After months of exhausting workouts, you take it easy and get some rest in prepa
 :: next5
 <span id="money">Money: $money</span>
 
-<<timed 1s t8n>>6 months later
+<<timed 1s t8n>>//6 months later//
 
 <<next 2s>>With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
 

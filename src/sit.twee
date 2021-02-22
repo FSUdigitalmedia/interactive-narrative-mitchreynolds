@@ -33,7 +33,7 @@ It is the 2nd round of the playoffs, and you can barely wait to get some playoff
 
 As expected, you decide to suit up for the full game.
 
-<<timed 2s t8n>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"That what I like to hear, $name. Now go tell your teammates and get ready for the game."<</type>><</say>>
+<<timed 2s t8n>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"That's what I like to hear, $name. Now go tell your teammates and get ready for the game."<</type>><</say>>
 
 <<next 5s>>This proves to be a good decision as you proceed to score 35 points in your playoff debut, leading the $teamchoice to a round 2 victory.
 

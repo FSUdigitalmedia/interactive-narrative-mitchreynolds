@@ -25,7 +25,11 @@ The first half of game 2 looks much like the previous game with you scoring at w
 
 <<next 5s>>The doctors have an infuriating "I told you so" look on their faces as they tell you the severity of the injury.
 
-<<next 3s>><<say 'doctor' '../assets/doctor.png'>><<type 40ms>>"Unfortunately, exactly what we expected to happened just happened. With all this damage to your knee, its pretty certain that you can never play basketball again. We're terribly sorry, $name, but it looks like your NBA career is over."<</type>><</say>>
+<<next 3s>><<say 'doctor' '../assets/doctor.png'>><<type 40ms>>"Unfortunately, exactly what we expected to happen just happened. With all this damage to your knee, its pretty certain that you can never play basketball again. We're terribly sorry, $name, but it looks like your NBA career is over."<</type>><</say>>
 
 <<next 10s>>The injury completely demoralizes your team, who proceed to lose the next 4 games and get eliminated.
+
+<<next 4s>><h2>You Lose</h2>
 <</timed>>
+
+

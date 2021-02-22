@@ -6,10 +6,10 @@
 <<next 2s>>Although most are impressed by your improvement, it has made many people suspicious, particularly Nate, your rival on the team.
 
 <<next 3s>><<say 'nate' '../assets/nate.png'>><<type 40ms>>"Wow, $name, you've certainly been making some gains. Find a new training regiment or something?"<</type>><</say>>
-<<next 4s>><<linkreplace "&nbsp;&nbsp;&nbsp;&nbsp;Yeah, this new trainer is really helping me">><br>
-    <<say 'nate' '../assets/nate.png'>><<type 40ms>>"So you're telling me this is all natural?<</type>><</say>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Of course it is, why do you ask?">><br><br><<say 'nate' '../assets/nate.png'>><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><</say>><br>
+<<next 4s>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//Yeah, this new trainer is really helping me//">><br>
+    <<say 'nate' '../assets/nate.png'>><<type 40ms>>"So you're telling me this is all natural?<</type>><</say>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//Of course it is, why do you ask?//">><br><br><<say 'nate' '../assets/nate.png'>><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><</say>><br>
     <<timed 7s t8n>>[[Give Nate Steroids|give]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Keep Denying|deny]]<</timed>><</linkappend>><</timed>>
-<</linkreplace>>
+<</linkappend>>
 <</timed>>
 
 :: deny
@@ -18,7 +18,7 @@
 <<say 'nate' '../assets/nate.png'>><<type 40ms>>"Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>><</say>>
 
 <<timed 4s t8n>>You get another call from your agent<br>
-<<next 1s>><<linkappend "Answer Phone">><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you've been kicked out of the NBA."<</type>><</say>><</linkappend>>
+<<next 1s>><<linkreplace "Answer Phone">><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you've been kicked out of the NBA."<</type>><</say>><</linkreplace>>
 
 <<next 12s>><h2>You Lose</h2><</timed>>
 

@@ -79,4 +79,4 @@ You get a call from your new agent<br>
     <<say 'agent' '../assets/agent.png'>><<type 40ms>>"Great, I'll let the $teamchoice know you're ready to come meet with them. The interview will let you make a good first impression while they judge you as a prospect."<</type>><</say>><br>
 <</nobr>>
 
-<<timed 8s t8n>>[[Head to Interview]]<</timed>>
+<<timed 8s t8n>>[[Head to Interview|Interview]]<</timed>>
