@@ -5,37 +5,98 @@
 
 <<next 2s>>Although most are impressed by your improvement, it has made many people suspicious, particularly Nate, your rival on the team.
 
-<<next 3s>><<type 40ms>>Nate: "Wow, $name, you've certainly been growing. Find a new training regiment or something?<</type>>
-<<next 4s>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Yeah, this new trainer is really helping me">><br>
-    <<type 40ms>>"So you're telling me this is all natural?"<</type>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Of course it is, why do you ask?">><br><br><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><br>
+<<next 3s>><<say 'nate' '../assets/nate.png'>><<type 40ms>>"Wow, $name, you've certainly been making some gains. Find a new training regiment or something?"<</type>><</say>>
+<<next 4s>><<linkreplace "&nbsp;&nbsp;&nbsp;&nbsp;Yeah, this new trainer is really helping me">><br>
+    <<say 'nate' '../assets/nate.png'>><<type 40ms>>"So you're telling me this is all natural?<</type>><</say>><br><<timed 3s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;Of course it is, why do you ask?">><br><br><<say 'nate' '../assets/nate.png'>><<type 40ms>>"C'mon, $name, I'm not that dumb. I'll tell you what, though. If you can hook me up with whatever you've been taking, the league doesn't have to know."<</type>><</say>><br>
     <<timed 7s t8n>>[[Give Nate Steroids|give]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Keep Denying|deny]]<</timed>><</linkappend>><</timed>>
-<</linkappend>>
+<</linkreplace>>
 <</timed>>
 
 :: deny
 
-<<type 40ms>>Nate: "Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>>
+<<say 'nate' '../assets/nate.png'>><<type 40ms>>"Oh, so it's like that? I guess we'll just have to see what the league thinks."<</type>><</say>>
 
-<!-- insert linkappend conversation --><<timed 4s t8n>>You get another call from your agent
-[img[../assets/agent.png]]
-<<type 40ms>>"Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you've been kicked out of the NBA."<</type>>
+<<timed 4s t8n>>You get another call from your agent<br>
+<<next 1s>><<linkappend "Answer Phone">><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"Are you serious? I give you access to illegal steroids and you get caught before the season even starts? The league office just called me, you've been kicked out of the NBA."<</type>><</say>><</linkappend>>
 
-<<next 8s>>You Lose<</timed>>
+<<next 12s>><h2>You Lose</h2><</timed>>
 
 :: give
 
-<<type 40ms>>Nate: I knew you'd crack. This was the best decision for the both of us.<</type>>
+<<say 'nate' '../assets/nate.png'>><<type 40ms>>"I knew you'd crack. This was the best decision for the both of us."<</type>><</say>>
 
-<<timed 4s t8n>>4 months later<br>
-<!-- insert linkappend conversation --><<next 2s>>You get another call from your agent
-[img[../assets/agent.png]]
-<<next 1s>><<type 40ms>>"Bad news, $name. Nate Young has exploded this year and its not looking good for your playing time. If you don't show major improvements soon, I'm afraid you'll never see the starting lineup"<</type>><br>
-<<next 5s>>So what should I do?<br>
-<<next 3s>><<type 40ms>>"I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know what I need to set up."<</type>><br>
-<<next 9s>>[[Work with Coach|coach2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Hire Trainer|trainer2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Take More Steroids|roids2]]
-<</timed>>
-<!-- expand these 3 paths -->
+<<timed 4s t8n>>//4 months later//<br>
+<<next 2s>>You get another call from your agent<br><</timed>>
+<<timed 7s t8n>><<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"Bad news, $name. Nate Young has exploded so far this year and its not looking good for your playing time. If you don't show major improvements soon, I'm afraid you'll never see the starting lineup"<</type>><</say>>
+    <<timed 8.5s t8n>><<linkappend "&nbsp;&nbsp;&nbsp;&nbsp;//So what should I do?//">><br><br><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I would suggest either working extra with your coach or hiring professional trainers. Of course, I can always just up your dosage instead. Either way, let me know if I need to set anything up."<</type>><</say>><br>
+    <<timed 9s t8n>>[[Work with Coach|coach2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Hire Trainer|trainer2]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Take More Steroids|roids2]]<</timed>><</linkappend>><</timed>><</linkreplace>><</timed>>
 
 :: coach2
 
-Second coach passage
+<<say 'coach' '../assets/coach.png'>><<type 40ms>>"Hey, $name. Glad to see you want some more practice. You looked great in the offseason, but Nate has been something else this year. Let's get to work and shorten the gap."<</type>><</say>>
+
+<<timed 6s t8n>>Every day after practice and games, you get extra work in with your coach. Your hard work, along with the steroids of course, is beginning to pay off as your minutes increase.
+
+<<next 4s>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"I gotta say, $name, I'm very impressed with the dedication and progress you've shown me throughout this season. Teams are beginning to figure out how to stop Nate, and I think you're what we need to keep winning. Be ready for this next game, I'm putting you in the starting lineup."<</type>><</say>>
+
+<<next 13s>>[[Continue|next9]]<</timed>>
+
+:: next9
+
+You've been placed in the starting lineup and have been excelling in your new role. Your game speaks for itself, and your coach and teammates now expect you to be the leader on the court.
+
+<<timed 5s t8n>>Behind your leadership and stellar performances, the $teamchoice enter the final weeks of the regular season in playoff position.
+
+<<next 5s>>[[Continue|next10]]<</timed>>
+
+:: next10
+
+<<timed 1s t8n>>With the playoffs just a couple weeks away, the $teamchoice have secured a playoff spot thanks to your all-star level play.
+
+<<next 4s>>In just the last week of the season, you land wrong and injure your knee. Luckily it is minor, but the team doctors say you will probably have to miss the first round, warning you of the risk for much worse reinjury.
+
+<<next 5s>>However, as the best player on the team, you feel pressured to not let down your coaches and teammates. Your coach calls you over to talk.
+<<linkreplace "Talk to Coach">><<say 'coach' '../assets/coach.png'>><<type 40ms>>"The doctors just gave me the report, looks like you're gonna be fine. They're strongly reccomending that you sit out the first round, but I think we both know how our chances look without you in the game. I'm leaving the decision up to you, just let me know what you want to do."<</type>><</say>>
+<</linkreplace>>
+
+<<next 13s>>[[Take the Risk and Play|play]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[Sit Out and Fully Heal|sit]]<</timed>>
+
+:: trainer2
+
+<<nobr>><<say 'trainer' '../assets/trainer.png'>><<type 40ms>>"Nice to meet you, $name. Let's go through some drills first."<</type>><</say>><br>
+<</nobr>>
+
+<<timed 3s t8n>>[[Do Drills|next11]]<</timed>>
+
+:: next11
+
+After months of spending all of your free time in the gym for exhausting workouts, you begin seeing major improvments in your playing time.<br>
+<<timed 2.5s t8n>>You get another call from your agent<br>
+    <<next 1s>><<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"I told you they're the best for a reason! I just got word that the $teamchoice are so impressed with your progress that you've been slated as a starter for tomorrow night's game! Rest up, your career is just getting started!"<</type>><</say>>
+    <</linkreplace>>
+<<next 10s>>[[Continue|next9]]<</timed>>
+
+:: roids2
+
+Just like the first time, you see immediate results from the steroids. You wonder if all this muscle is going to actually help you play better, but it's too late for that.
+
+<<timed 4s t8n>>Even more than before, you have attracted the attention of your whole team with your miraculous transformation.
+
+<<next 4s>><<say 'coach' '../assets/coach.png'>><<type 40ms>>"I had no idea you had those type of genetics, $name. It's great that you've been spending time in the weight room, but remember that you're here to play basketball, not bodybuild."<</type>><</say>>
+
+<<next 10s>>After pictures of your gains go viral on social media, you receive notice that the league has selected you for a "random" drug test.
+
+<<next 4s>>[[Take Drug Test|test]]
+<</timed>>
+
+:: test
+
+You solemnly go through the testing process, even though you already know the result.
+
+<<timed 3s t8n>>At home, you pace around your room waiting for the inevidable phone call.
+
+<<next 4s>>You get a call from your agent<br>
+<<next 1s>><<linkreplace "Answer Phone">><<say 'agent' '../assets/agent.png'>><<type 40ms>>"This is it, $name. The league office just called and as I think you already know, you've been kicked out of the league. We both knew the risks, but I really thought you'd get away with it. Oh well, good luck with life outside the NBA."<</type>><</say>><br>
+    <<timed 13s t8n>><h2>You Lose</h2><br>
+    <<next 1s>>On the bright side, you now have a great head start on a new career in bodybuilding.<</timed>><</linkreplace>>
+<</timed>>

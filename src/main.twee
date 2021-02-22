@@ -17,16 +17,17 @@ Mitch Reynolds
 <pre><code><nowiki><<character 'coach' '../assets/coach.png'>></nowiki></code></pre>
 <pre><code><nowiki><<character 'trainer' '../assets/trainer.png'>></nowiki></code></pre>
 <pre><code><nowiki><<character 'doctor' '../assets/doctor.png'>></nowiki></code></pre>
+<pre><code><nowiki><<character 'nate' '../assets/nate.png'>></nowiki></code></pre>
 
 
 :: Start
-You are the star basketball player at your university. 
+You look around the room at the joyful faces of your friends and family.
 
-After a couple of great seasons, you have made the decision to end your college career and enter the NBA Draft.
+After a couple of great seasons as the star of your university's basketball team, you have made the decision to end your college career and enter the NBA Draft.
 
 Your natural talent is obvious, but some scouts question your work ethic having coasted through college, and wonder if you left too soon.
 
-To prepare for the draft, you hire an agent.
+To help you prepare for the draft, you hire an agent.
 
 [[Continue|next1]]
 
